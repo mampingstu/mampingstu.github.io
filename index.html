@@ -1,0 +1,1634 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>鸠摩智 邻家小妹 一线天 - 原创影像社区 | 品牌官方视频门户</title>
+<meta name="description" content="鸠摩智 邻家小妹 一线天官方网站，作为深耕原创影像的品牌平台，聚合高清纪录、人物访谈与社区创作，为创作者与企业搭建值得信赖的内容生态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ff5a4d'/%3E%3Cpath d='M24 18 L48 32 L24 46 Z' fill='%23fff5ef'/%3E%3C/svg%3E">
+<style>
+:root{
+  --jj-red:#e8453c;
+  --jj-red-deep:#b8291f;
+  --jj-ink:#17161a;
+  --jj-ink-soft:#3c3a41;
+  --jj-mute:#6e6b74;
+  --jj-line:#e6e2dd;
+  --jj-cream:#fbf8f4;
+  --jj-paper:#ffffff;
+  --jj-warm:#f4ece3;
+  --jj-radius:16px;
+  --jj-shadow:0 14px 40px rgba(23,22,26,.10);
+  --jj-header-h:104px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:var(--jj-header-h)}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",sans-serif;
+  color:var(--jj-ink);
+  background:var(--jj-cream);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+ul,ol{list-style:none}
+.jj-sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ===== 吸顶公告 + 页头 ===== */
+.jj-sticky{
+  position:sticky;top:0;z-index:120;
+  background:rgba(251,248,244,.94);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--jj-line);
+}
+.jj-announce{
+  background:linear-gradient(90deg,var(--jj-ink) 0%,#2c2a30 58%,#3a2523 100%);
+  color:#f7f2ec;
+  font-size:13px;
+  letter-spacing:.2px;
+}
+.jj-announce__inner{
+  max-width:1200px;margin:0 auto;padding:9px 20px;
+  display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+}
+.jj-announce__tag{
+  flex:none;font-size:11px;font-weight:700;letter-spacing:1.5px;
+  background:var(--jj-red);color:#fff;padding:2px 9px;border-radius:999px;
+}
+.jj-announce__items{display:flex;gap:22px;flex-wrap:wrap;flex:1;min-width:0}
+.jj-announce__item{display:inline-flex;align-items:center;gap:7px;color:#e8e0d7;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+.jj-announce__item b{color:#fff;font-weight:600}
+.jj-announce__item::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--jj-red);flex:none}
+.jj-announce__more{font-size:12px;color:#ffb0a5;font-weight:600;white-space:nowrap}
+
+.jj-header{max-width:1200px;margin:0 auto;padding:0 20px}
+.jj-header__bar{display:flex;align-items:center;gap:26px;height:64px}
+.jj-logo{display:flex;align-items:center;gap:10px;flex:none}
+.jj-logo__mark{
+  width:36px;height:36px;border-radius:10px;flex:none;
+  background:linear-gradient(140deg,var(--jj-red) 0%,var(--jj-red-deep) 100%);
+  display:grid;place-items:center;
+  box-shadow:0 6px 16px rgba(232,69,60,.35);
+}
+.jj-logo__mark svg{width:16px;height:16px}
+.jj-logo__text{line-height:1.15}
+.jj-logo__text strong{display:block;font-size:15.5px;letter-spacing:1.2px}
+.jj-logo__text span{display:block;font-size:9.5px;letter-spacing:2.6px;color:var(--jj-mute);text-transform:uppercase}
+.jj-nav{display:flex;gap:4px;margin-left:8px}
+.jj-nav a{
+  font-size:14px;color:var(--jj-ink-soft);padding:7px 11px;border-radius:8px;
+  transition:background .2s,color .2s;font-weight:500;
+}
+.jj-nav a:hover,.jj-nav a:focus-visible{background:var(--jj-warm);color:var(--jj-red-deep)}
+.jj-header__tools{margin-left:auto;display:flex;align-items:center;gap:10px}
+.jj-search{
+  position:relative;display:flex;align-items:center;
+  background:var(--jj-paper);border:1px solid var(--jj-line);border-radius:999px;
+  padding:0 6px 0 14px;height:38px;width:230px;transition:border-color .2s,box-shadow .2s;
+}
+.jj-search:focus-within{border-color:var(--jj-red);box-shadow:0 0 0 3px rgba(232,69,60,.13)}
+.jj-search input{
+  border:none;outline:none;background:transparent;font-size:13.5px;
+  width:100%;height:100%;color:var(--jj-ink);
+}
+.jj-search input::placeholder{color:#a9a4ab}
+.jj-search__btn{
+  flex:none;width:28px;height:28px;border-radius:50%;background:var(--jj-ink);
+  display:grid;place-items:center;color:#fff;transition:background .2s;
+}
+.jj-search__btn:hover{background:var(--jj-red)}
+.jj-search__btn svg{width:13px;height:13px}
+.jj-search__hint{
+  position:absolute;top:calc(100% + 8px);left:0;right:0;
+  background:var(--jj-paper);border:1px solid var(--jj-line);border-radius:12px;
+  box-shadow:var(--jj-shadow);padding:8px;font-size:13px;color:var(--jj-ink-soft);
+  display:none;z-index:60;
+}
+.jj-search__hint.is-open{display:block}
+.jj-search__hint p{padding:6px 9px;border-radius:7px}
+.jj-search__hint p:hover{background:var(--jj-warm)}
+.jj-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:7px;
+  padding:9px 18px;border-radius:999px;font-size:13.5px;font-weight:600;
+  transition:transform .18s,box-shadow .18s,background .18s;white-space:nowrap;
+}
+.jj-btn--primary{background:var(--jj-red);color:#fff;box-shadow:0 8px 20px rgba(232,69,60,.3)}
+.jj-btn--primary:hover{background:var(--jj-red-deep);transform:translateY(-1px)}
+.jj-btn--ghost{background:transparent;color:var(--jj-ink);border:1px solid var(--jj-line)}
+.jj-btn--ghost:hover{border-color:var(--jj-ink);transform:translateY(-1px)}
+.jj-btn--light{background:#fff;color:var(--jj-ink)}
+.jj-btn--light:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(0,0,0,.18)}
+.jj-burger{display:none;width:40px;height:40px;border-radius:10px;border:1px solid var(--jj-line);place-items:center;background:#fff}
+.jj-burger span{display:block;width:17px;height:1.8px;background:var(--jj-ink);margin:2.6px 0;transition:transform .25s,opacity .25s}
+.jj-burger.is-active span:nth-child(1){transform:translateY(6.2px) rotate(45deg)}
+.jj-burger.is-active span:nth-child(2){opacity:0}
+.jj-burger.is-active span:nth-child(3){transform:translateY(-6.2px) rotate(-45deg)}
+.jj-mobile-nav{display:none;border-top:1px solid var(--jj-line);background:var(--jj-cream)}
+.jj-mobile-nav.is-open{display:block}
+.jj-mobile-nav a{display:block;padding:13px 22px;font-size:14.5px;border-bottom:1px solid var(--jj-line);color:var(--jj-ink-soft)}
+.jj-mobile-nav a:last-child{border-bottom:none}
+
+/* ===== 通用容器 ===== */
+.jj-wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.jj-section{padding:64px 0}
+.jj-section--tight{padding:44px 0}
+.jj-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;
+  letter-spacing:2.4px;color:var(--jj-red-deep);text-transform:uppercase;margin-bottom:12px;
+}
+.jj-eyebrow::before{content:"";width:22px;height:2px;background:var(--jj-red)}
+.jj-h2{font-size:clamp(22px,3vw,32px);line-height:1.3;letter-spacing:.4px;font-weight:800}
+.jj-h2 em{font-style:normal;color:var(--jj-red-deep)}
+.jj-lead{color:var(--jj-mute);font-size:14.5px;margin-top:10px;max-width:760px}
+.jj-sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:30px;flex-wrap:wrap}
+
+/* ===== 首屏 4:6 ===== */
+.jj-hero{
+  background:
+    radial-gradient(900px 420px at 88% -8%,rgba(232,69,60,.13),transparent 62%),
+    radial-gradient(700px 380px at -6% 108%,rgba(244,236,227,.9),transparent 60%),
+    var(--jj-cream);
+  padding:46px 0 58px;
+  overflow:hidden;
+}
+.jj-hero__grid{display:grid;grid-template-columns:minmax(0,0.86fr) minmax(0,1.14fr);gap:48px;align-items:center}
+.jj-hero__badge{
+  display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--jj-line);
+  padding:6px 14px;border-radius:999px;font-size:12px;font-weight:600;color:var(--jj-ink-soft);
+  box-shadow:0 4px 14px rgba(23,22,26,.05);
+}
+.jj-hero__badge i{width:6px;height:6px;border-radius:50%;background:var(--jj-red);display:inline-block;animation:jjPulse 1.8s infinite}
+@keyframes jjPulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(232,69,60,.5)}50%{opacity:.65;box-shadow:0 0 0 6px rgba(232,69,60,0)}}
+.jj-hero h1{
+  font-size:clamp(32px,5.2vw,58px);line-height:1.1;letter-spacing:-1px;font-weight:900;
+  margin:18px 0 16px;
+}
+.jj-hero h1 mark{background:none;color:var(--jj-red-deep);position:relative}
+.jj-hero h1 mark::after{content:"";position:absolute;left:0;right:0;bottom:5px;height:9px;background:rgba(232,69,60,.16);z-index:-1;border-radius:3px}
+.jj-hero__sub{font-size:16px;color:var(--jj-ink-soft);font-weight:500;letter-spacing:.3px}
+.jj-hero__intro{font-size:14.5px;color:var(--jj-mute);margin:16px 0 24px;text-align:justify}
+.jj-hero__intro strong{color:var(--jj-ink);font-weight:600}
+.jj-hero__actions{display:flex;gap:12px;flex-wrap:wrap}
+.jj-hero__stats{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:30px;
+  border-top:1px solid var(--jj-line);padding-top:22px;
+}
+.jj-stat b{display:block;font-size:clamp(20px,2.6vw,27px);font-weight:900;letter-spacing:-.5px;color:var(--jj-ink)}
+.jj-stat b span{font-size:13px;color:var(--jj-red-deep);margin-left:2px;font-weight:700}
+.jj-stat small{font-size:12px;color:var(--jj-mute);letter-spacing:.4px}
+.jj-hero__visual{position:relative}
+.jj-hero__frame{
+  position:relative;border-radius:24px;overflow:hidden;background:var(--jj-ink);
+  box-shadow:0 32px 70px rgba(23,22,26,.24);
+  aspect-ratio:16/11;
+}
+.jj-hero__frame img{width:100%;height:100%;object-fit:cover}
+.jj-hero__play{
+  position:absolute;right:18px;bottom:18px;display:flex;align-items:center;gap:9px;
+  background:rgba(255,255,255,.94);border-radius:999px;padding:7px 15px 7px 8px;
+  font-size:12.5px;font-weight:700;box-shadow:0 10px 26px rgba(0,0,0,.22);
+}
+.jj-hero__play i{
+  width:28px;height:28px;border-radius:50%;background:var(--jj-red);display:grid;place-items:center;flex:none;
+}
+.jj-hero__play svg{width:11px;height:11px}
+.jj-hero__float{
+  position:absolute;left:-22px;bottom:-26px;background:#fff;border-radius:14px;
+  padding:14px 18px;box-shadow:var(--jj-shadow);border:1px solid var(--jj-line);max-width:230px;
+}
+.jj-hero__float b{display:block;font-size:13px;letter-spacing:.4px}
+.jj-hero__float small{font-size:11.5px;color:var(--jj-mute);display:block;margin-top:2px}
+.jj-hero__float em{font-style:normal;color:var(--jj-red-deep);font-weight:800}
+.jj-hero__tag{position:absolute;top:16px;left:16px;background:rgba(23,22,26,.8);color:#fff;font-size:11.5px;letter-spacing:1.6px;padding:5px 11px;border-radius:6px;backdrop-filter:blur(6px)}
+
+/* ===== 关键词解析长文 ===== */
+.jj-essay{background:var(--jj-paper);border-top:1px solid var(--jj-line);border-bottom:1px solid var(--jj-line)}
+.jj-essay__grid{display:grid;grid-template-columns:minmax(0,0.62fr) minmax(0,1.38fr);gap:46px}
+.jj-essay__aside{position:relative}
+.jj-essay__aside h2{margin-bottom:14px}
+.jj-essay__card{
+  background:var(--jj-warm);border-radius:var(--jj-radius);padding:22px;border:1px solid #ece0d4;margin-top:22px;
+}
+.jj-essay__card h3{font-size:14px;letter-spacing:1px;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.jj-essay__card h3 svg{width:15px;height:15px;color:var(--jj-red-deep)}
+.jj-essay__card li{font-size:13px;color:var(--jj-ink-soft);padding:7px 0;border-bottom:1px dashed #dccfc0;display:flex;gap:9px}
+.jj-essay__card li:last-child{border-bottom:none}
+.jj-essay__card li b{color:var(--jj-red-deep);flex:none;font-weight:700}
+.jj-essay__body{font-size:14.6px;color:var(--jj-ink-soft);text-align:justify}
+.jj-essay__body h3{font-size:17.5px;color:var(--jj-ink);margin:26px 0 10px;padding-left:13px;border-left:4px solid var(--jj-red);line-height:1.4}
+.jj-essay__body h3:first-child{margin-top:0}
+.jj-essay__body p{margin-bottom:12px}
+.jj-essay__body strong{color:var(--jj-red-deep);font-weight:700}
+.jj-essay__quote{
+  background:linear-gradient(135deg,#fff7f4,#fffdfb);border:1px solid #f0d9d2;border-left:4px solid var(--jj-red);
+  border-radius:0 12px 12px 0;padding:16px 20px;font-size:14px;color:var(--jj-ink-soft);margin:16px 0;
+}
+
+/* ===== 焦点视界 ===== */
+.jj-focus__grid{display:grid;grid-template-columns:minmax(0,1.06fr) minmax(0,1fr);gap:22px}
+.jj-card{
+  background:var(--jj-paper);border:1px solid var(--jj-line);border-radius:var(--jj-radius);
+  overflow:hidden;transition:transform .22s,box-shadow .22s;
+}
+.jj-card:hover{transform:translateY(-3px);box-shadow:var(--jj-shadow)}
+.jj-focus__main{display:block;position:relative}
+.jj-focus__main img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.jj-focus__main .jj-focus__body{padding:22px 24px 24px}
+.jj-badge{
+  display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;letter-spacing:1px;
+  background:rgba(232,69,60,.1);color:var(--jj-red-deep);padding:4px 10px;border-radius:5px;margin-bottom:10px;
+}
+.jj-focus__body h3{font-size:20px;line-height:1.4;margin-bottom:8px;letter-spacing:.2px}
+.jj-focus__body p{font-size:13.5px;color:var(--jj-mute);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.jj-meta{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--jj-mute);margin-top:14px}
+.jj-meta b{color:var(--jj-ink);font-weight:600}
+.jj-focus__list{display:flex;flex-direction:column;gap:14px}
+.jj-mini{
+  display:grid;grid-template-columns:96px minmax(0,1fr);gap:14px;padding:12px;
+  background:var(--jj-paper);border:1px solid var(--jj-line);border-radius:13px;
+  transition:transform .2s,box-shadow .2s;align-items:center;
+}
+.jj-mini:hover{transform:translateX(3px);box-shadow:0 10px 26px rgba(23,22,26,.08)}
+.jj-mini img{width:96px;height:70px;object-fit:cover;border-radius:9px}
+.jj-mini h4{font-size:14.5px;line-height:1.45;margin-bottom:5px}
+.jj-mini p{font-size:12px;color:var(--jj-mute);display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+.jj-mini small{font-size:11.5px;color:var(--jj-red-deep);font-weight:600}
+
+/* ===== 视频流三列 ===== */
+.jj-videos{background:linear-gradient(180deg,#fbf8f4,#f5efe8)}
+.jj-vgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.jj-vcard{
+  background:var(--jj-paper);border:1px solid var(--jj-line);border-radius:var(--jj-radius);
+  overflow:hidden;display:flex;flex-direction:column;transition:transform .22s,box-shadow .22s;
+}
+.jj-vcard:hover{transform:translateY(-4px);box-shadow:var(--jj-shadow)}
+.jj-vcard__cover{position:relative;display:block}
+.jj-vcard__cover img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.jj-vcard__dur{position:absolute;bottom:9px;right:9px;background:rgba(23,22,26,.82);color:#fff;font-size:11px;padding:2px 7px;border-radius:4px;letter-spacing:.5px}
+.jj-vcard__tag{position:absolute;top:9px;left:9px;background:rgba(255,255,255,.95);color:var(--jj-red-deep);font-size:10.5px;font-weight:700;padding:3px 8px;border-radius:4px;letter-spacing:.8px}
+.jj-vcard__body{padding:15px 16px 16px;display:flex;flex-direction:column;flex:1}
+.jj-vcard__body h3{font-size:15.5px;line-height:1.45;margin-bottom:7px}
+.jj-vcard__body p{font-size:12.5px;color:var(--jj-mute);flex:1;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.jj-kw{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}
+.jj-kw span{font-size:10.5px;color:var(--jj-ink-soft);background:var(--jj-warm);padding:2px 8px;border-radius:999px}
+.jj-vcard__foot{
+  display:flex;align-items:center;gap:12px;padding-top:11px;border-top:1px solid var(--jj-line);
+  font-size:11.5px;color:var(--jj-mute);
+}
+.jj-author-line{display:flex;align-items:center;gap:6px;font-weight:600;color:var(--jj-ink-soft)}
+.jj-author-line i{width:18px;height:18px;border-radius:50%;display:grid;place-items:center;font-size:9px;color:#fff;font-weight:700;font-style:normal}
+.jj-actions{margin-left:auto;display:flex;gap:6px}
+.jj-act{
+  display:inline-flex;align-items:center;gap:3px;font-size:11.5px;padding:4px 7px;border-radius:7px;
+  color:var(--jj-mute);transition:background .18s,color .18s;
+}
+.jj-act:hover{background:var(--jj-warm);color:var(--jj-red-deep)}
+.jj-act svg{width:13px;height:13px}
+.jj-act.is-on{color:var(--jj-red-deep)}
+.jj-act.is-on svg{fill:var(--jj-red-deep)}
+
+/* ===== 专题 ===== */
+.jj-plans{background:var(--jj-paper);border-top:1px solid var(--jj-line);border-bottom:1px solid var(--jj-line)}
+.jj-plans__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.jj-plan{
+  border-radius:var(--jj-radius);padding:24px 22px;border:1px solid var(--jj-line);
+  background:var(--jj-cream);display:flex;flex-direction:column;transition:transform .22s,box-shadow .22s;
+}
+.jj-plan:nth-child(2){background:linear-gradient(160deg,#1b1a1f,#2e2321);color:#efe7df;border-color:transparent}
+.jj-plan:nth-child(2) .jj-plan__item{border-color:rgba(255,255,255,.14)}
+.jj-plan:nth-child(2) .jj-plan__item small,.jj-plan:nth-child(2) .jj-plan__status{color:#c9bfb6}
+.jj-plan:hover{transform:translateY(-4px);box-shadow:var(--jj-shadow)}
+.jj-plan__top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}
+.jj-plan__status{font-size:11px;letter-spacing:1px;color:var(--jj-red-deep);font-weight:700}
+.jj-plan:nth-child(2) .jj-plan__status{color:#ffb0a5}
+.jj-plan h3{font-size:18px;margin-bottom:8px;line-height:1.4}
+.jj-plan>p{font-size:13px;color:var(--jj-mute);margin-bottom:14px}
+.jj-plan:nth-child(2)>p{color:#c9bfb6}
+.jj-plan__item{padding:9px 0;border-top:1px dashed #e4d9cd;font-size:13px;display:flex;gap:9px;align-items:flex-start}
+.jj-plan__item span{color:var(--jj-red-deep);font-weight:800;font-size:12px;flex:none}
+.jj-plan:nth-child(2) .jj-plan__item span{color:#ffb0a5}
+.jj-plan__item small{display:block;font-size:11.5px;color:var(--jj-mute);margin-top:1px}
+
+/* ===== 作者双列 ===== */
+.jj-authors__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.jj-author{
+  display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;padding:20px;
+  background:var(--jj-paper);border:1px solid var(--jj-line);border-radius:var(--jj-radius);
+  transition:transform .22s,box-shadow .22s;align-items:start;
+}
+.jj-author:hover{transform:translateY(-3px);box-shadow:var(--jj-shadow)}
+.jj-avatar{
+  width:64px;height:64px;border-radius:18px;display:grid;place-items:center;
+  color:#fff;font-size:22px;font-weight:800;letter-spacing:1px;flex:none;box-shadow:inset 0 -10px 24px rgba(0,0,0,.14);
+}
+.jj-author h3{font-size:15.5px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.jj-author h3 em{font-style:normal;font-size:10.5px;font-weight:700;background:rgba(232,69,60,.1);color:var(--jj-red-deep);padding:1px 7px;border-radius:4px;letter-spacing:.5px}
+.jj-author__field{font-size:12px;color:var(--jj-red-deep);font-weight:600;margin:3px 0 7px}
+.jj-author__bio{font-size:12.5px;color:var(--jj-mute);line-height:1.65}
+.jj-author__nums{display:flex;gap:16px;margin-top:9px;font-size:11.5px;color:var(--jj-mute)}
+.jj-author__nums b{color:var(--jj-ink);font-weight:700}
+.jj-author__more{
+  font-size:12px;font-weight:700;color:var(--jj-red-deep);margin-top:8px;display:inline-flex;gap:4px;align-items:center;
+}
+.jj-author__more:hover{text-decoration:underline}
+
+/* ===== 评论 + 榜单 ===== */
+.jj-community{background:linear-gradient(180deg,#f5efe8,#fbf8f4)}
+.jj-comm__grid{display:grid;grid-template-columns:minmax(0,1.22fr) minmax(0,1fr);gap:26px;align-items:start}
+.jj-comments{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.jj-comment{
+  background:var(--jj-paper);border:1px solid var(--jj-line);border-radius:13px;padding:16px 17px;
+}
+.jj-comment__head{display:flex;align-items:center;gap:9px;margin-bottom:7px}
+.jj-comment__head i{
+  width:26px;height:26px;border-radius:50%;display:grid;place-items:center;
+  color:#fff;font-size:11px;font-weight:700;font-style:normal;flex:none;
+}
+.jj-comment__head b{font-size:12.5px}
+.jj-comment__head small{margin-left:auto;font-size:10.5px;color:#a9a4ab}
+.jj-comment p{font-size:12.8px;color:var(--jj-ink-soft);line-height:1.65}
+.jj-comment__foot{display:flex;gap:12px;margin-top:9px;font-size:11px;color:var(--jj-mute)}
+.jj-rank{background:var(--jj-paper);border:1px solid var(--jj-line);border-radius:var(--jj-radius);padding:22px 22px 14px}
+.jj-rank h3{font-size:15px;margin-bottom:4px;display:flex;align-items:center;gap:8px}
+.jj-rank__sub{font-size:11.5px;color:var(--jj-mute);margin-bottom:14px}
+.jj-rank__row{
+  display:flex;align-items:center;gap:12px;padding:11px 0;border-top:1px solid var(--jj-line);
+}
+.jj-rank__row:first-of-type{border-top:none}
+.jj-rank__no{
+  width:22px;height:22px;border-radius:6px;display:grid;place-items:center;font-size:11.5px;font-weight:800;
+  background:var(--jj-warm);color:var(--jj-ink-soft);flex:none;
+}
+.jj-rank__row:nth-of-type(1) .jj-rank__no{background:var(--jj-red);color:#fff}
+.jj-rank__row:nth-of-type(2) .jj-rank__no{background:var(--jj-ink);color:#fff}
+.jj-rank__row p{font-size:13px;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.jj-rank__row small{font-size:11px;color:var(--jj-mute);flex:none}
+.jj-rank__bar{height:5px;border-radius:3px;background:#f0eae2;width:64px;flex:none;overflow:hidden}
+.jj-rank__bar i{display:block;height:100%;background:linear-gradient(90deg,var(--jj-red),#ff8a72);border-radius:3px}
+
+/* ===== 辅助区：动态 / 合作 / FAQ ===== */
+.jj-aux__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:start}
+.jj-panel{background:var(--jj-paper);border:1px solid var(--jj-line);border-radius:var(--jj-radius);padding:24px}
+.jj-panel h3{font-size:16px;margin-bottom:14px;display:flex;align-items:center;gap:9px}
+.jj-panel h3 svg{width:16px;height:16px;color:var(--jj-red-deep)}
+.jj-news li{padding:11px 0;border-top:1px dashed var(--jj-line);font-size:13px}
+.jj-news li:first-child{border-top:none;padding-top:0}
+.jj-news time{display:block;font-size:11px;color:var(--jj-red-deep);font-weight:600;letter-spacing:.5px;margin-bottom:2px}
+.jj-news p{color:var(--jj-ink-soft);line-height:1.6}
+.jj-partners{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.jj-partner{
+  border:1px solid var(--jj-line);border-radius:10px;padding:12px 10px;text-align:center;
+  font-size:12.5px;font-weight:600;color:var(--jj-ink-soft);background:var(--jj-cream);letter-spacing:.4px;
+}
+.jj-partner:hover{border-color:var(--jj-red);color:var(--jj-red-deep)}
+.jj-faq details{border-bottom:1px solid var(--jj-line);padding:11px 0}
+.jj-faq details:first-of-type{border-top:1px solid var(--jj-line)}
+.jj-faq summary{font-size:13.2px;font-weight:600;cursor:pointer;list-style:none;display:flex;align-items:center;gap:9px}
+.jj-faq summary::-webkit-details-marker{display:none}
+.jj-faq summary::before{content:"+";color:var(--jj-red-deep);font-weight:800;width:12px;flex:none}
+.jj-faq details[open] summary::before{content:"−"}
+.jj-faq details p{font-size:12.5px;color:var(--jj-mute);padding:8px 0 2px 21px;line-height:1.7}
+
+/* ===== 投稿CTA ===== */
+.jj-cta{
+  background:linear-gradient(120deg,#1a181c 0%,#31201d 55%,#4a2620 100%);
+  color:#f6efe8;border-radius:24px;padding:44px 40px;position:relative;overflow:hidden;
+  display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:30px;align-items:center;
+}
+.jj-cta::after{
+  content:"";position:absolute;right:-90px;top:-90px;width:280px;height:280px;border-radius:50%;
+  background:radial-gradient(circle,rgba(232,69,60,.5),transparent 68%);
+}
+.jj-cta h2{font-size:clamp(21px,2.8vw,28px);line-height:1.35;margin-bottom:10px;position:relative}
+.jj-cta p{font-size:13.5px;color:#cbbfb6;max-width:520px;position:relative}
+.jj-cta__form{display:flex;gap:10px;margin-top:18px;position:relative;flex-wrap:wrap}
+.jj-cta__form input{
+  flex:1;min-width:180px;height:42px;border-radius:999px;border:1px solid rgba(255,255,255,.22);
+  background:rgba(255,255,255,.08);color:#fff;padding:0 18px;font-size:13px;outline:none;
+}
+.jj-cta__form input::placeholder{color:#a89f98}
+.jj-cta__form input:focus{border-color:var(--jj-red)}
+.jj-cta__side{position:relative;display:flex;flex-direction:column;gap:10px}
+.jj-cta__pill{display:flex;align-items:center;gap:10px;font-size:12.5px;color:#e7ddd4;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:11px;padding:11px 14px}
+.jj-cta__pill b{color:#fff}
+.jj-cta__pill svg{width:15px;height:15px;color:#ffb0a5;flex:none}
+
+/* ===== 页脚 ===== */
+.jj-footer{background:#141317;color:#b9b2ab;padding:52px 0 26px;margin-top:64px;font-size:13px}
+.jj-footer__grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:34px}
+.jj-footer h4{font-size:13.5px;color:#fff;margin-bottom:13px;letter-spacing:1px}
+.jj-footer__brand .jj-logo__text strong{color:#fff}
+.jj-footer__brand .jj-logo__text span{color:#857f79}
+.jj-footer__brand p{margin-top:14px;line-height:1.8;color:#918a84;max-width:330px;font-size:12.5px}
+.jj-footer li{padding:5px 0;font-size:12.5px}
+.jj-footer a:hover{color:#ffb0a5}
+.jj-footer__bottom{
+  margin-top:34px;padding-top:20px;border-top:1px solid #2a282d;display:flex;justify-content:space-between;
+  gap:14px;flex-wrap:wrap;font-size:12px;color:#78726d;
+}
+.jj-footer__bottom span{letter-spacing:.3px}
+.jj-footer__soc{display:flex;gap:8px;margin-top:14px}
+.jj-footer__soc button{
+  width:32px;height:32px;border-radius:9px;border:1px solid #33313a;display:grid;place-items:center;
+  color:#b9b2ab;transition:background .2s,color .2s,border-color .2s;
+}
+.jj-footer__soc button:hover{background:var(--jj-red);color:#fff;border-color:var(--jj-red)}
+.jj-footer__soc svg{width:14px;height:14px}
+
+/* ===== Toast / 弹窗 ===== */
+.jj-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,18px);z-index:400;
+  background:var(--jj-ink);color:#fff;font-size:13px;padding:11px 20px;border-radius:999px;
+  box-shadow:0 16px 40px rgba(0,0,0,.3);opacity:0;pointer-events:none;transition:opacity .28s,transform .28s;
+  max-width:90vw;text-align:center;
+}
+.jj-toast.is-show{opacity:1;transform:translate(-50%,0)}
+.jj-modal{
+  position:fixed;inset:0;z-index:500;display:none;align-items:center;justify-content:center;padding:20px;
+  background:rgba(16,15,18,.62);backdrop-filter:blur(4px);
+}
+.jj-modal.is-open{display:flex}
+.jj-modal__box{
+  background:var(--jj-paper);border-radius:18px;max-width:520px;width:100%;padding:28px;
+  box-shadow:0 30px 80px rgba(0,0,0,.36);position:relative;max-height:86vh;overflow:auto;
+}
+.jj-modal__close{position:absolute;top:14px;right:14px;width:32px;height:32px;border-radius:50%;background:var(--jj-warm);display:grid;place-items:center;font-size:17px;color:var(--jj-ink-soft)}
+.jj-modal__close:hover{background:#efe3d6}
+.jj-modal h3{font-size:19px;margin-bottom:6px;padding-right:30px}
+.jj-modal__sub{font-size:12.5px;color:var(--jj-mute);margin-bottom:18px}
+.jj-field{margin-bottom:14px}
+.jj-field label{display:block;font-size:12.5px;font-weight:600;margin-bottom:6px}
+.jj-field input,.jj-field textarea,.jj-field select{
+  width:100%;border:1px solid var(--jj-line);border-radius:10px;padding:10px 12px;font-size:13.5px;
+  font-family:inherit;outline:none;background:var(--jj-cream);color:var(--jj-ink);
+}
+.jj-field textarea{min-height:92px;resize:vertical}
+.jj-field input:focus,.jj-field textarea:focus,.jj-field select:focus{border-color:var(--jj-red);box-shadow:0 0 0 3px rgba(232,69,60,.12)}
+.jj-modal__actions{display:flex;gap:10px;margin-top:6px;flex-wrap:wrap}
+.jj-author-modal__top{display:flex;gap:15px;align-items:center;margin-bottom:15px}
+.jj-author-modal__top .jj-avatar{width:56px;height:56px;border-radius:15px;font-size:19px}
+.jj-share-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:6px}
+.jj-share-grid button{
+  border:1px solid var(--jj-line);border-radius:10px;padding:12px;font-size:13px;font-weight:600;
+  background:var(--jj-cream);transition:border-color .2s,color .2s;
+}
+.jj-share-grid button:hover{border-color:var(--jj-red);color:var(--jj-red-deep)}
+.jj-linkbox{display:flex;gap:8px;margin-top:12px}
+.jj-linkbox input{flex:1;min-width:0;font-size:12px;border:1px solid var(--jj-line);border-radius:9px;padding:9px 11px;background:var(--jj-cream);color:var(--jj-mute);outline:none}
+
+/* ===== 回顶 ===== */
+.jj-top{
+  position:fixed;right:22px;bottom:26px;z-index:310;width:44px;height:44px;border-radius:50%;
+  background:var(--jj-ink);color:#fff;display:grid;place-items:center;box-shadow:0 12px 30px rgba(0,0,0,.24);
+  opacity:0;pointer-events:none;transform:translateY(10px);transition:opacity .25s,transform .25s,background .2s;
+}
+.jj-top:hover{background:var(--jj-red)}
+.jj-top.is-show{opacity:1;pointer-events:auto;transform:translateY(0)}
+.jj-top svg{width:16px;height:16px}
+
+/* ===== 搜索高亮 ===== */
+.jj-hit{background:rgba(232,69,60,.22);border-radius:3px;padding:0 1px}
+
+/* ===== 响应式 ===== */
+@media(max-width:1080px){
+  .jj-hero__grid{grid-template-columns:1fr;gap:34px}
+  .jj-hero__visual{order:-1}
+  .jj-essay__grid{grid-template-columns:1fr;gap:26px}
+  .jj-vgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .jj-plans__grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .jj-aux__grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .jj-comm__grid{grid-template-columns:1fr}
+  .jj-footer__grid{grid-template-columns:1.4fr 1fr 1fr}
+  .jj-cta{grid-template-columns:1fr;padding:34px 26px}
+}
+@media(max-width:860px){
+  :root{--jj-header-h:96px}
+  .jj-nav{display:none}
+  .jj-search{display:none}
+  .jj-burger{display:grid}
+  .jj-header__bar{height:56px;gap:12px}
+  .jj-header__tools .jj-btn{display:none}
+  .jj-focus__grid{grid-template-columns:1fr}
+  .jj-authors__grid{grid-template-columns:1fr}
+}
+@media(max-width:680px){
+  .jj-section{padding:44px 0}
+  .jj-vgrid{grid-template-columns:1fr}
+  .jj-plans__grid{grid-template-columns:1fr}
+  .jj-aux__grid{grid-template-columns:1fr}
+  .jj-comments{grid-template-columns:1fr}
+  .jj-footer__grid{grid-template-columns:1fr 1fr}
+  .jj-announce__items{gap:10px}
+  .jj-announce__more{display:none}
+  .jj-hero__float{left:0;bottom:-20px}
+  .jj-author{grid-template-columns:52px minmax(0,1fr);padding:16px}
+  .jj-avatar{width:52px;height:52px;font-size:18px;border-radius:14px}
+  .jj-mini{grid-template-columns:78px minmax(0,1fr)}
+  .jj-mini img{width:78px;height:60px}
+}
+@media(max-width:440px){
+  .jj-footer__grid{grid-template-columns:1fr}
+  .jj-hero__stats{grid-template-columns:1fr 1fr}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- ============ S1 吸顶：公告 + 页头 ============ -->
+<div class="jj-sticky">
+  <div class="jj-announce">
+    <div class="jj-announce__inner">
+      <span class="jj-announce__tag">最新</span>
+      <div class="jj-announce__items">
+        <a class="jj-announce__item" href="#videos"><b>《一线天·山路七小时》</b>正片上线，高清 4K 版本已开放</a>
+        <a class="jj-announce__item" href="#plans">「邻家小妹」共创企划第 3 期开放报名，名额 120</a>
+        <a class="jj-announce__item" href="#aux"><b>11 月创作者开放日</b>改为 11 月 29 日，投稿通道延长 48 小时</a>
+      </div>
+      <a class="jj-announce__more" href="#news">全部公告 →</a>
+    </div>
+  </div>
+
+  <header class="jj-header">
+    <div class="jj-header__bar">
+      <a class="jj-logo" href="#top" aria-label="鸠摩智 邻家小妹 一线天 官方首页">
+        <span class="jj-logo__mark">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 5l12 7-12 7V5z" fill="#fff"/></svg>
+        </span>
+        <span class="jj-logo__text">
+          <strong>鸠摩智映像</strong>
+          <span>JIUMOZHI · STUDIO</span>
+        </span>
+      </a>
+
+      <nav class="jj-nav" aria-label="主导航">
+        <a href="#focus">焦点</a>
+        <a href="#videos">视频</a>
+        <a href="#plans">专题企划</a>
+        <a href="#authors">创作者</a>
+        <a href="#community">口碑</a>
+        <a href="#aux">帮助</a>
+      </nav>
+
+      <div class="jj-header__tools">
+        <div class="jj-search" role="search">
+          <label class="jj-sr-only" for="jjSearchInput">站内搜索</label>
+          <input id="jjSearchInput" type="search" placeholder="搜索视频、创作者、专题" autocomplete="off">
+          <button class="jj-search__btn" id="jjSearchBtn" aria-label="搜索">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L21 21"/></svg>
+          </button>
+          <div class="jj-search__hint" id="jjSearchHint" aria-live="polite"></div>
+        </div>
+        <button class="jj-btn jj-btn--primary" data-jj-open="submit">投稿 / 报名</button>
+        <button class="jj-burger" id="jjBurger" aria-label="展开导航" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="jj-mobile-nav" id="jjMobileNav">
+      <a href="#focus">焦点视界</a>
+      <a href="#essay">关键词解析</a>
+      <a href="#videos">热门视频</a>
+      <a href="#plans">专题企划</a>
+      <a href="#authors">创作者矩阵</a>
+      <a href="#community">口碑与榜单</a>
+      <a href="#aux">企业动态 / FAQ</a>
+      <a href="#cta" data-jj-open="submit">投稿与报名入口</a>
+    </div>
+  </header>
+</div>
+
+<main id="top">
+
+  <!-- ============ S2 首屏（4:6 左文右图） ============ -->
+  <section class="jj-hero">
+    <div class="jj-wrap">
+      <div class="jj-hero__grid">
+        <div class="jj-hero__copy">
+          <span class="jj-hero__badge"><i></i>官方网站 · 品牌正式发布</span>
+          <h1>鸠摩智 邻家小妹 一线天</h1>
+          <p class="jj-hero__sub">一座把山野、街巷与普通人拍成作品的原创影像社区</p>
+          <p class="jj-hero__intro">
+            作为深耕纪实与生活影像的<strong>企业级视频品牌</strong>，鸠摩智映像以「鸠摩智」的锋利观察、「邻家小妹」的温柔视角与「一线天」的窄路叙事为三条内容支线，持续为创作者与品牌搭建高品质内容生态。这里是<strong>官网</strong>入口，也是所有正片、花絮与幕后手记的官方发布地。
+          </p>
+          <div class="jj-hero__actions">
+            <a class="jj-btn jj-btn--primary" href="#videos">观看本期正片</a>
+            <a class="jj-btn jj-btn--ghost" href="#essay">阅读品牌解析</a>
+            <button class="jj-btn jj-btn--ghost" data-jj-open="submit">创作者报名</button>
+          </div>
+          <div class="jj-hero__stats">
+            <div class="jj-stat">
+              <b data-jj-count="1860">0</b>
+              <small>原创高清作品（部）</small>
+            </div>
+            <div class="jj-stat">
+              <b data-jj-count="42" data-jj-suffix="万">0</b>
+              <small>社区注册创作者</small>
+            </div>
+            <div class="jj-stat">
+              <b data-jj-count="97" data-jj-suffix="%">0</b>
+              <small>用户口碑好评率</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="jj-hero__visual">
+          <div class="jj-hero__frame">
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 960 660'%3E%3Cdefs%3E%3ClinearGradient id='sky' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23242a3a'/%3E%3Cstop offset='55' stop-color='%235c4a4a'/%3E%3Cstop offset='100' stop-color='%23e8896a'/%3E%3C/linearGradient%3E%3ClinearGradient id='cliff' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231a1b22'/%3E%3Cstop offset='100' stop-color='%233b3641'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='960' height='660' fill='url(%23sky)'/%3E%3Ccircle cx='700' cy='230' r='64' fill='%23ffd9b8' opacity='.88'/%3E%3Cpath d='M0 660 L0 380 L120 300 L230 372 L320 262 L430 350 L520 300 L640 392 L760 320 L880 400 L960 352 L960 660 Z' fill='url(%23cliff)'/%3E%3Cpath d='M430 350 L520 300 L640 392 L700 660 L400 660 Z' fill='%23f0c9a8' opacity='.2'/%3E%3Cpath d='M448 356 L510 318 L548 660 L462 660 Z' fill='%23ffe3c8' opacity='.35'/%3E%3Cpath d='M0 660 L0 520 L180 470 L360 528 L560 476 L760 540 L960 490 L960 660 Z' fill='%23111015'/%3E%3Cg fill='%23fff' opacity='.8'%3E%3Ccircle cx='150' cy='90' r='2'/%3E%3Ccircle cx='260' cy='60' r='1.6'/%3E%3Ccircle cx='380' cy='110' r='1.8'/%3E%3Ccircle cx='540' cy='70' r='1.5'/%3E%3Ccircle cx='820' cy='100' r='2'/%3E%3C/g%3E%3Cg stroke='%23ffffff' stroke-opacity='.32' stroke-width='2' fill='none'%3E%3Ccircle cx='480' cy='330' r='34'/%3E%3Cpath d='M470 316 L494 330 L470 344 Z' fill='%23ffffff' fill-opacity='.75' stroke='none'/%3E%3C/g%3E%3C/svg%3E" alt="鸠摩智映像品牌主视觉：黄昏山谷间的一线天窄道与远处人影" width="960" height="660">
+            <span class="jj-hero__tag">官方主视觉 · 2026</span>
+            <span class="jj-hero__play">
+              <i><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 5l11 7-11 7V5z" fill="#fff"/></svg></i>
+              播放 04:38 预告
+            </span>
+          </div>
+          <div class="jj-hero__float">
+            <b>本周社区热度 <em>+18.4%</em></b>
+            <small>「一线天」实地拍摄手记被收藏 6,214 次</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 关键词解析（长文 ≥800 字） ============ -->
+  <section class="jj-section jj-essay" id="essay">
+    <div class="jj-wrap">
+      <div class="jj-essay__grid">
+        <aside class="jj-essay__aside">
+          <span class="jj-eyebrow">Brand Insight</span>
+          <h2 class="jj-h2">三个词，<em>一条内容路线</em></h2>
+          <p class="jj-lead">我们把品牌拆成三个可被反复使用的叙事母题，让每一次拍摄都有清晰的落点。</p>
+          <div class="jj-essay__card">
+            <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 18V8l8-4 8 4v10"/><path d="M9 18v-6h6v6"/></svg>三个母题</h3>
+            <ul>
+              <li><b>01</b><span>鸠摩智：锋利、机敏、带一点戏剧性的观察者</span></li>
+              <li><b>02</b><span>邻家小妹：亲近、耐心、愿意蹲下来听人说话</span></li>
+              <li><b>03</b><span>一线天：窄路、夹缝、向下走才能看见的风景</span></li>
+            </ul>
+          </div>
+          <div class="jj-essay__card" style="background:#fff;border-color:#eee7df">
+            <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v18M3 12h18"/></svg>阅读提示</h3>
+            <p style="font-size:12.5px;color:#6e6b74;line-height:1.75">本节为品牌官方对关键词的完整解释，含三条支线的选题标准、拍摄伦理与社区规则，建议与下方的专题企划对照阅读。</p>
+          </div>
+        </aside>
+
+        <div class="jj-essay__body">
+          <h3>一、为什么把「鸠摩智」放在最前面</h3>
+          <p>很多人第一次听到<strong>鸠摩智</strong>，想到的是那个语速极快、招式繁复、永远在寻找更高境界的角色。我们借用这个名字，并非要做戏仿，而是取他身上那股「不肯停在原地」的劲儿。作为一家持续运营的视频品牌，鸠摩智映像的第一条支线被定义为「观察者支线」：拍摄者必须比被拍摄者更早到场、更晚离开，必须在事件的边缘站够足够长的时间，才能捕捉到那些没被安排的瞬间。我们给这条支线定下三条硬标准——第一，现场收音必须保留环境底噪，不允许用音乐抹平真实；第二，任何一段素材如果要剪掉，必须在场记本上写明理由；第三，成片不得使用未经当事人同意的特写。这三条听起来像纪律，其实是让「锋利的观察」不至于变成「冒犯的凝视」。我们在川西的一座小城拍过一位修表匠，老人手上的放大镜戴了三十年，镜片边缘磨出一圈白痕。那段素材最后只用了四十一秒，但它是整支片子里最被观众记住的部分，评论区最高赞的一条写着：「原来时间真的会在人身上留下痕迹。」这类反馈让我们确信，所谓行业领先，并不是设备清单更长，而是愿意为四十一秒等上六天。</p>
+          <h3>二、「邻家小妹」是一种观看距离</h3>
+          <p><strong>邻家小妹</strong>这条支线，承担的是品牌里最柔软的那一半。它不是指某一位固定的出镜者，而是一种刻意保持的观看距离：不俯视、不仰视、不猎奇、不代言。我们要求所有进入这条支线的创作者，把机位降到与受访者视线齐平的位置，把问题从「你为什么这样做」换成「你平时是怎么做的」。前者逼人表态，后者让人叙述。这条支线目前最受欢迎的一组作品叫《楼下那家早餐店》，拍摄对象是一对在城中村开了十一年早餐铺的夫妻。片子里没有一句旁白，只有油锅、蒸汽、找零的硬币声和老板娘叫客人名字的声音。上线两周，播放量破了一百二十万，社区里陆续出现三十多条同题投稿，来自不同城市的早餐摊、修鞋铺、裁缝店。这就是我们理解的内容生态：平台不去定义谁值得被拍，而是把方法和标准公开，让更多人自己拿起机器。<strong>邻家小妹</strong>的真正含义，是承认每一个普通人的日常都足够构成一部片子，只要拍摄者愿意多待一会儿、多问一句、多等一次天光。</p>
+          <div class="jj-essay__quote">「真实不是不加修饰，而是修饰之后仍然让人相信。」——品牌内容手册第 2 版，关于纪实剪辑的七条共识之一。</div>
+          <h3>三、「一线天」是关于窄路的方法论</h3>
+          <p><strong>一线天</strong>原本是地貌名词：两壁夹峙，抬头只见一线天空。我们把它借来形容一种创作处境——预算有限、人手有限、时间有限，但仍然要完成一次完整的表达。这条支线对应品牌的「窄路计划」：每年拿出固定预算，支持二十位创作者在极简条件下完成一支十五分钟以内的纪录短片。条件越窄，方法就越重要。我们总结出一套可复用的流程：开拍前用一张 A4 纸写清「一句话主题、三个必拍场景、一个必须放弃的镜头」；拍摄期每天收工后花二十分钟做口述日志，第二天开工前回听；剪辑期先剪一条没有音乐的版本，确认信息完整后再考虑情绪。这套流程看起来朴素，却让「窄路计划」的完片率从第一年的四成提升到第三年的七成八。更重要的是，它让创作者明白：限制不是敌人，限制是结构的来源。一个只能在一线天里行走的人，反而会记住每一级台阶的高度。</p>
+          <h3>四、三个词如何在同一个社区里共存</h3>
+          <p>把这三个词放在一起，会有人担心它们互相打架：<strong>鸠摩智</strong>太锋利，<strong>邻家小妹</strong>太温和，<strong>一线天</strong>太克制。但在真实的创作现场，它们其实是一条流水线上的三道工序。锋利负责发现问题，温和负责靠近问题，克制负责不让表达溢出。我们内部的选题会有一个固定环节：任何提案都必须回答「这条片子属于哪条支线」，如果回答不上来，就说明它还没有找到自己的位置。这条规则筛掉了不少看起来热闹、实际空洞的选题，也让社区的内容方向保持稳定。作为官方网站，我们把这三条支线的完整说明、投稿规范、素材授权模板全部公开，任何人都可以下载、参照、提出修改意见。我们相信，一个值得信赖的品牌，不是把所有答案握在手里，而是把问题和方法一起交出去。过去三年，社区累计收到投稿四万一千余条，正式上线一千八百六十部，其中超过三分之一来自非职业创作者。这个比例让我们对「用户首选」这四个字有了更具体的理解：它不是一句口号，而是一次次被选择、被复用、被改进的结果。</p>
+          <p>接下来的部分，你会看到这三条支线如何落成具体的视频、专题、创作者与社区规则。如果你也有一条窄路想走，欢迎从投稿入口开始。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ S3 焦点（1 大 + 3 小） ============ -->
+  <section class="jj-section" id="focus">
+    <div class="jj-wrap">
+      <div class="jj-sec-head">
+        <div>
+          <span class="jj-eyebrow">Focus</span>
+          <h2 class="jj-h2">焦点视界 · <em>本周三支正片</em></h2>
+          <p class="jj-lead">由官方编辑部与社区创作者共同选出的重点内容，全部为原创正版高清成片。</p>
+        </div>
+        <a class="jj-btn jj-btn--ghost" href="#videos">查看全部视频</a>
+      </div>
+
+      <div class="jj-focus__grid">
+        <a class="jj-card jj-focus__main" href="#videos">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f6e7d6'/%3E%3Cstop offset='100' stop-color='%23d9a887'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='500' fill='url(%23g1)'/%3E%3Crect x='0' y='330' width='800' height='170' fill='%238b6a55'/%3E%3Cg fill='%233d2c23'%3E%3Crect x='120' y='250' width='150' height='90' rx='6'/%3E%3Crect x='140' y='215' width='110' height='40' rx='5'/%3E%3C/g%3E%3Cg stroke='%23ffffff' stroke-opacity='.6' stroke-width='3' fill='none'%3E%3Cpath d='M300 250 q60 -60 120 0'/%3E%3Cpath d='M360 250 q40 -40 80 0'/%3E%3C/g%3E%3Ccircle cx='620' cy='150' r='52' fill='%23fff4e6' opacity='.9'/%3E%3Cg fill='%233d2c23' opacity='.85'%3E%3Ccircle cx='480' cy='300' r='14'/%3E%3Crect x='468' y='314' width='24' height='52' rx='8'/%3E%3Ccircle cx='560' cy='320' r='12'/%3E%3Crect x='549' y='332' width='22' height='44' rx='7'/%3E%3C/g%3E%3Crect x='0' y='480' width='800' height='20' fill='%23c99f7e' opacity='.5'/%3E%3C/svg%3E" alt="《楼下那家早餐店》正片封面：清晨街角的老式早餐铺与蒸汽" width="800" height="500">
+          <div class="jj-focus__body">
+            <span class="jj-badge">官方精选 · 邻家小妹支线</span>
+            <h3>《楼下那家早餐店》：一对夫妻、十一年与一千四百个清晨</h3>
+            <p>没有旁白，没有配乐，只有油锅、蒸汽和叫客人名字的声音。我们把机位放在与老板娘视线齐平的位置，拍了整整六个清晨。</p>
+            <div class="jj-meta">
+              <span>导演 <b>阿桑</b></span>
+              <span>时长 <b>21:07</b></span>
+              <span>播放 <b>124.8 万</b></span>
+              <span>口碑 <b>9.6</b></span>
+            </div>
+          </div>
+        </a>
+
+        <div class="jj-focus__list">
+          <a class="jj-mini" href="#videos">
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 220'%3E%3Crect width='300' height='220' fill='%232b3140'/%3E%3Cpath d='M0 220 L0 130 L70 96 L150 138 L230 84 L300 120 L300 220 Z' fill='%23141720'/%3E%3Cpath d='M150 138 L230 84 L300 120 L300 220 L180 220 Z' fill='%233f4a63'/%3E%3Ccircle cx='236' cy='58' r='20' fill='%23ffd9a8' opacity='.9'/%3E%3Cpath d='M118 140 L162 116 L178 220 L130 220 Z' fill='%23e9e0d2' opacity='.35'/%3E%3C/svg%3E" alt="《一线天·山路七小时》封面：窄谷两侧岩壁与一线天空" width="300" height="220">
+            <div>
+              <h4>《一线天·山路七小时》</h4>
+              <p>窄路计划首部正片，记录一支三人摄制组走进峡谷的完整一天。</p>
+              <small>鸠摩智支线 · 播放 86.2 万</small>
+            </div>
+          </a>
+          <a class="jj-mini" href="#videos">
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 220'%3E%3Crect width='300' height='220' fill='%23ecdfd0'/%3E%3Ccircle cx='150' cy='96' r='44' fill='%23c98f6b'/%3E%3Cpath d='M106 96 a44 44 0 0 1 88 0 q0 26 -44 26 q-44 0 -44 -26z' fill='%238c5a3e'/%3E%3Crect x='96' y='140' width='108' height='60' rx='20' fill='%23483a34'/%3E%3Cg stroke='%23fff' stroke-opacity='.55' stroke-width='2' fill='none'%3E%3Ccircle cx='150' cy='96' r='58'/%3E%3C/g%3E%3C/svg%3E" alt="《修表匠的四十一秒》封面：手部特写与放大镜" width="300" height="220">
+            <div>
+              <h4>《修表匠的四十一秒》</h4>
+              <p>一枚戴了三十年的放大镜，镜片边缘磨出一圈白痕。</p>
+              <small>鸠摩智支线 · 播放 71.5 万</small>
+            </div>
+          </a>
+          <a class="jj-mini" href="#videos">
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 220'%3E%3Crect width='300' height='220' fill='%231f2a26'/%3E%3Cpath d='M0 220 L0 150 L90 118 L170 156 L300 110 L300 220 Z' fill='%2338493f'/%3E%3Cg fill='%23a9c7ae'%3E%3Ccircle cx='70' cy='170' r='7'/%3E%3Ccircle cx='110' cy='188' r='5'/%3E%3Ccircle cx='210' cy='176' r='6'/%3E%3C/g%3E%3Crect x='128' y='70' width='44' height='44' rx='8' fill='%23e8d6b8' opacity='.85'/%3E%3C/svg%3E" alt="《窄路计划·第三期发布》封面：山谷绿意与新芽" width="300" height="220">
+            <div>
+              <h4>《窄路计划·第三期发布》</h4>
+              <p>二十位创作者、十五条成片，预算之外他们收获了什么。</p>
+              <small>官方发布 · 播放 46.9 万</small>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ S3 视频流（三列卡片） ============ -->
+  <section class="jj-section jj-videos" id="videos">
+    <div class="jj-wrap">
+      <div class="jj-sec-head">
+        <div>
+          <span class="jj-eyebrow">Videos</span>
+          <h2 class="jj-h2">热门视频 · <em>六部正在被反复观看</em></h2>
+          <p class="jj-lead">每一条都标注了支线、时长与社区数据，支持点赞与收藏，数据实时同步。</p>
+        </div>
+        <a class="jj-btn jj-btn--ghost" href="#cta">我要投稿</a>
+      </div>
+
+      <div class="jj-vgrid" id="jjVideoGrid">
+
+        <article class="jj-vcard" data-jj-search="一线天 山路 峡谷 窄路计划 纪录片 阿桑">
+          <a class="jj-vcard__cover" href="#videos">
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='v1' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23333a48'/%3E%3Cstop offset='100' stop-color='%238a6a5c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23v1)'/%3E%3Cpath d='M0 360 L0 210 L120 150 L250 224 L360 160 L470 226 L560 180 L640 224 L640 360 Z' fill='%2316151c'/%3E%3Cpath d='M250 224 L360 160 L470 226 L430 360 L300 360 Z' fill='%23c9a68a' opacity='.28'/%3E%3Cpath d='M286 214 L338 182 L354 360 L300 360 Z' fill='%23ffe6c9' opacity='.4'/%3E%3Ccircle cx='330' cy='120' r='16' fill='%23fff' opacity='.9'/%3E%3C/svg%3E" alt="《一线天·山路七小时》视频封面：峡谷夹缝中的一线天空" width="640" height="360">
+            <span class="jj-vcard__tag">一线天支线</span>
+            <span class="jj-vcard__dur">04:38</span>
+          </a>
+          <div class="jj-vcard__body">
+            <h3>一线天·山路七小时：三人摄制组走完一条没人拍的窄路</h3>
+            <p>从海拔一千二百米的入口到谷底，摄制组只带了两台机器和一壶水，全程记录取景、架机与撤离的真实节奏。</p>
+            <div class="jj-kw"><span>窄路计划</span><span>现场收音</span><span>4K 高清</span></div>
+            <div class="jj-vcard__foot">
+              <span class="jj-author-line"><i style="background:#e8453c">桑</i>阿桑</span>
+              <span>86.2 万</span>
+              <span class="jj-actions">
+                <button class="jj-act" data-jj-like aria-pressed="false" aria-label="点赞">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.6-7 9-7 9z"/></svg>
+                  <span>2.4k</span>
+                </button>
+                <button class="jj-act" data-jj-fav aria-pressed="false" aria-label="收藏">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 4h12v17l-6-4-6 4z"/></svg>
+                </button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="jj-vcard" data-jj-search="邻家小妹 早餐店 城中村 日常记录 阿桑">
+          <a class="jj-vcard__cover" href="#videos">
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23f2e3d2'/%3E%3Crect x='0' y='250' width='640' height='110' fill='%23ab8668'/%3E%3Crect x='60' y='120' width='220' height='130' rx='8' fill='%23443730'/%3E%3Crect x='84' y='146' width='172' height='78' rx='5' fill='%23ffdca8'/%3E%3Cg stroke='%23e8c79c' stroke-width='4' fill='none' opacity='.8'%3E%3Cpath d='M300 220 q40 -60 80 0'/%3E%3Cpath d='M360 220 q30 -44 70 0'/%3E%3C/g%3E%3Ccircle cx='520' cy='150' r='46' fill='%23fff6e6'/%3E%3Cg fill='%233f2f26'%3E%3Ccircle cx='400' cy='268' r='13'/%3E%3Crect x='388' y='281' width='24' height='46' rx='9'/%3E%3Ccircle cx='500' cy='276' r='12'/%3E%3Crect x='489' y='288' width='22' height='40' rx='8'/%3E%3C/g%3E%3C/svg%3E" alt="《楼下那家早餐店》视频封面：清晨蒸汽中的早餐铺与招牌" width="640" height="360">
+            <span class="jj-vcard__tag">邻家小妹支线</span>
+            <span class="jj-vcard__dur">21:07</span>
+          </a>
+          <div class="jj-vcard__body">
+            <h3>楼下那家早餐店：十一年、一千四百个清晨与一碗豆浆</h3>
+            <p>机位与老板娘的视线齐平，六天清晨连续跟拍，保留全部环境声，不用配乐。</p>
+            <div class="jj-kw"><span>日常记录</span><span>社区共创</span><span>口碑 9.6</span></div>
+            <div class="jj-vcard__foot">
+              <span class="jj-author-line"><i style="background:#b8291f">桑</i>阿桑</span>
+              <span>124.8 万</span>
+              <span class="jj-actions">
+                <button class="jj-act" data-jj-like aria-pressed="false" aria-label="点赞">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.6-7 9-7 9z"/></svg>
+                  <span>6.7k</span>
+                </button>
+                <button class="jj-act" data-jj-fav aria-pressed="false" aria-label="收藏">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 4h12v17l-6-4-6 4z"/></svg>
+                </button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="jj-vcard" data-jj-search="鸠摩智 修表匠 手部特写 人物访谈 老物件">
+          <a class="jj-vcard__cover" href="#videos">
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23242026'/%3E%3Ccircle cx='320' cy='180' r='120' fill='%23c9a276' opacity='.2'/%3E%3Ccircle cx='320' cy='180' r='78' fill='none' stroke='%23e9cba6' stroke-width='6'/%3E%3Ccircle cx='320' cy='180' r='6' fill='%23e9cba6'/%3E%3Cpath d='M320 180 L320 124' stroke='%23e9cba6' stroke-width='7' stroke-linecap='round'/%3E%3Cpath d='M320 180 L368 204' stroke='%23e9cba6' stroke-width='5' stroke-linecap='round'/%3E%3Cg fill='%23e9cba6' opacity='.5'%3E%3Crect x='64' y='300' width='120' height='8' rx='4'/%3E%3Crect x='456' y='300' width='120' height='8' rx='4'/%3E%3C/g%3E%3C/svg%3E" alt="《修表匠的四十一秒》视频封面：表盘与指针的手部特写" width="640" height="360">
+            <span class="jj-vcard__tag">鸠摩智支线</span>
+            <span class="jj-vcard__dur">41s</span>
+          </a>
+          <div class="jj-vcard__body">
+            <h3>修表匠的四十一秒：一枚放大镜戴了三十年</h3>
+            <p>我们在川西小城等了他六天，只为拍到那圈磨白的镜片边缘。整支片子只用了四十一秒素材。</p>
+            <div class="jj-kw"><span>人物访谈</span><span>匠人</span><span>原创正版</span></div>
+            <div class="jj-vcard__foot">
+              <span class="jj-author-line"><i style="background:#3c3a41">沉</i>沉舟</span>
+              <span>71.5 万</span>
+              <span class="jj-actions">
+                <button class="jj-act" data-jj-like aria-pressed="false" aria-label="点赞">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.6-7 9-7 9z"/></svg>
+                  <span>3.1k</span>
+                </button>
+                <button class="jj-act" data-jj-fav aria-pressed="false" aria-label="收藏">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 4h12v17l-6-4-6 4z"/></svg>
+                </button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="jj-vcard" data-jj-search="教程 剪辑 一线天 流程 A4 方法论 干货">
+          <a class="jj-vcard__cover" href="#videos">
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23f6f2ec'/%3E%3Crect x='110' y='54' width='180' height='252' rx='8' fill='%23ffffff' stroke='%23d8cfc4' stroke-width='3'/%3E%3Cg stroke='%23b9ada0' stroke-width='7' stroke-linecap='round'%3E%3Cpath d='M136 100 h128'/%3E%3Cpath d='M136 132 h128'/%3E%3Cpath d='M136 164 h96'/%3E%3Cpath d='M136 196 h112'/%3E%3Cpath d='M136 228 h72'/%3E%3C/g%3E%3Crect x='330' y='120' width='200' height='120' rx='10' fill='%23e8453c'/%3E%3Cpath d='M400 150 l64 30 -64 30z' fill='%23fff'/%3E%3C/svg%3E" alt="《窄路流程课》视频封面：一张 A4 纸与播放按钮" width="640" height="360">
+            <span class="jj-vcard__tag">教程干货</span>
+            <span class="jj-vcard__dur">12:20</span>
+          </a>
+          <div class="jj-vcard__body">
+            <h3>窄路流程课：用一张 A4 纸写完你的拍摄计划</h3>
+            <p>一句话主题、三个必拍场景、一个必须放弃的镜头。这套流程让完片率从四成提升到七成八。</p>
+            <div class="jj-kw"><span>教程</span><span>实用技巧</span><span>可下载模板</span></div>
+            <div class="jj-vcard__foot">
+              <span class="jj-author-line"><i style="background:#2f7d69">南</i>南屿</span>
+              <span>58.4 万</span>
+              <span class="jj-actions">
+                <button class="jj-act" data-jj-like aria-pressed="false" aria-label="点赞">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.6-7 9-7 9z"/></svg>
+                  <span>1.9k</span>
+                </button>
+                <button class="jj-act" data-jj-fav aria-pressed="false" aria-label="收藏">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 4h12v17l-6-4-6 4z"/></svg>
+                </button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="jj-vcard" data-jj-search="城市探索 街巷 夜骑 邻家小妹 声音">
+          <a class="jj-vcard__cover" href="#videos">
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%2318202b'/%3E%3Cg fill='%23f0c98a' opacity='.85'%3E%3Crect x='70' y='140' width='46' height='60'/%3E%3Crect x='140' y='110' width='38' height='90'/%3E%3Crect x='200' y='160' width='52' height='40'/%3E%3Crect x='440' y='120' width='40' height='80'/%3E%3Crect x='500' y='150' width='56' height='50'/%3E%3C/g%3E%3Cpath d='M0 260 L640 240 L640 360 L0 360 Z' fill='%230d1219'/%3E%3Cg stroke='%23e8453c' stroke-width='4' fill='none'%3E%3Ccircle cx='300' cy='286' r='18'/%3E%3Ccircle cx='356' cy='286' r='18'/%3E%3Cpath d='M318 286 L338 254 L356 286'/%3E%3C/g%3E%3C/svg%3E" alt="《夜骑三十公里》视频封面：城市夜色与自行车前行" width="640" height="360">
+            <span class="jj-vcard__tag">城市探索</span>
+            <span class="jj-vcard__dur">17:44</span>
+          </a>
+          <div class="jj-vcard__body">
+            <h3>夜骑三十公里：把一座城的路灯、便利店和打烊声录下来</h3>
+            <p>全程一个机位、一副领夹麦，记录城市在凌晨一两点钟的样子。评论区已出现七个城市的同题投稿。</p>
+            <div class="jj-kw"><span>城市探索</span><span>环境声</span><span>社区活动</span></div>
+            <div class="jj-vcard__foot">
+              <span class="jj-author-line"><i style="background:#3f5c8a">屿</i>屿声</span>
+              <span>63.1 万</span>
+              <span class="jj-actions">
+                <button class="jj-act" data-jj-like aria-pressed="false" aria-label="点赞">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.6-7 9-7 9z"/></svg>
+                  <span>2.8k</span>
+                </button>
+                <button class="jj-act" data-jj-fav aria-pressed="false" aria-label="收藏">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 4h12v17l-6-4-6 4z"/></svg>
+                </button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="jj-vcard" data-jj-search="品牌故事 三年 一百二十人 复盘 官方">
+          <a class="jj-vcard__cover" href="#videos">
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23fbf5ee'/%3E%3Cg fill='%23e8453c'%3E%3Crect x='80' y='230' width='34' height='60' rx='5'/%3E%3Crect x='130' y='190' width='34' height='100' rx='5'/%3E%3Crect x='180' y='150' width='34' height='140' rx='5'/%3E%3Crect x='230' y='110' width='34' height='180' rx='5'/%3E%3C/g%3E%3Cg fill='%2317161a'%3E%3Crect x='340' y='210' width='34' height='80' rx='5'/%3E%3Crect x='390' y='170' width='34' height='120' rx='5'/%3E%3Crect x='440' y='130' width='34' height='160' rx='5'/%3E%3Crect x='490' y='90' width='34' height='200' rx='5'/%3E%3C/g%3E%3Cpath d='M80 300 H560' stroke='%23cbbfb2' stroke-width='3'/%3E%3C/svg%3E" alt="《三年复盘》视频封面：增长柱状图与品牌色块" width="640" height="360">
+            <span class="jj-vcard__tag">品牌故事</span>
+            <span class="jj-vcard__dur">09:56</span>
+          </a>
+          <div class="jj-vcard__body">
+            <h3>三年复盘：从三十位创作者到四万一千条投稿</h3>
+            <p>官方编辑部梳理三年数据，讲清楚哪些规则被保留、哪些被推翻，以及为什么完片率是最重要的指标。</p>
+            <div class="jj-kw"><span>品牌故事</span><span>行业观察</span><span>官方发布</span></div>
+            <div class="jj-vcard__foot">
+              <span class="jj-author-line"><i style="background:#8a5a2b">编</i>编辑部</span>
+              <span>42.6 万</span>
+              <span class="jj-actions">
+                <button class="jj-act" data-jj-like aria-pressed="false" aria-label="点赞">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.6-7 9-7 9z"/></svg>
+                  <span>1.4k</span>
+                </button>
+                <button class="jj-act" data-jj-fav aria-pressed="false" aria-label="收藏">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 4h12v17l-6-4-6 4z"/></svg>
+                </button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ S4 专题企划 ============ -->
+  <section class="jj-section jj-plans" id="plans">
+    <div class="jj-wrap">
+      <div class="jj-sec-head">
+        <div>
+          <span class="jj-eyebrow">Projects</span>
+          <h2 class="jj-h2">专题企划 · <em>三条正在推进的线</em></h2>
+          <p class="jj-lead">每个专题都由品牌与社区共同运营，公开更新进度与内容清单，欢迎报名与投稿。</p>
+        </div>
+        <button class="jj-btn jj-btn--primary" data-jj-open="submit">报名参加</button>
+      </div>
+
+      <div class="jj-plans__grid">
+        <article class="jj-plan">
+          <div class="jj-plan__top">
+            <span class="jj-plan__status">更新中 · 第 3 期</span>
+            <span class="jj-kw" style="margin:0"><span>邻家小妹</span></span>
+          </div>
+          <h3>「邻家小妹」共创企划：拍下你楼下的一平米</h3>
+          <p>不限城市、不限器材，只要是你每天经过的那一平米。我们提供拍摄清单与授权模板，优秀作品进入官方推荐位。</p>
+          <div class="jj-plan__item"><span>01</span><div>《楼下那家早餐店》<small>阿桑 · 已上线 · 21:07</small></div></div>
+          <div class="jj-plan__item"><span>02</span><div>《修鞋铺的下午三点》<small>屿声 · 待审 · 14:20</small></div></div>
+          <div class="jj-plan__item"><span>03</span><div>《裁缝店的第三台缝纫机》<small>南屿 · 拍摄中</small></div></div>
+        </article>
+
+        <article class="jj-plan">
+          <div class="jj-plan__top">
+            <span class="jj-plan__status">报名开放 · 120 席</span>
+            <span class="jj-kw" style="margin:0"><span>一线天</span></span>
+          </div>
+          <h3>「一线天」窄路计划：用最低条件拍一条完整短片</h3>
+          <p>固定预算、固定周期、固定交付标准。我们更看重你如何在限制里做选择，而不是设备清单有多长。</p>
+          <div class="jj-plan__item"><span>01</span><div>《一线天·山路七小时》<small>阿桑 · 已上线 · 4K 版本</small></div></div>
+          <div class="jj-plan__item"><span>02</span><div>《一条巷子的十五个早晨》<small>沉舟 · 剪辑中</small></div></div>
+          <div class="jj-plan__item"><span>03</span><div>《顶楼的风》<small>招募摄影与收音</small></div></div>
+        </article>
+
+        <article class="jj-plan">
+          <div class="jj-plan__top">
+            <span class="jj-plan__status">资料整理中</span>
+            <span class="jj-kw" style="margin:0"><span>鸠摩智</span></span>
+          </div>
+          <h3>「鸠摩智」观察者档案：为一门手艺留下完整工序</h3>
+          <p>我们邀请手艺人、老师傅与他们的学徒共同参与，把工序拆解成可被记录的步骤，形成公开可查的影像档案。</p>
+          <div class="jj-plan__item"><span>01</span><div>《修表匠的四十一秒》<small>沉舟 · 已上线</small></div></div>
+          <div class="jj-plan__item"><span>02</span><div>《竹编的十二道工序》<small>资料征集中</small></div></div>
+          <div class="jj-plan__item"><span>03</span><div>《打铁铺的最后一炉》<small>筹备中 · 需在地协作</small></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ S5 创作者矩阵（双列简介） ============ -->
+  <section class="jj-section" id="authors">
+    <div class="jj-wrap">
+      <div class="jj-sec-head">
+        <div>
+          <span class="jj-eyebrow">Creators</span>
+          <h2 class="jj-h2">创作者矩阵 · <em>社区的中坚力量</em></h2>
+          <p class="jj-lead">他们分别擅长纪实、声音、教学与城市观察，是鸠摩智 邻家小妹 一线天内容生态里最稳定的四根支柱。</p>
+        </div>
+      </div>
+
+      <div class="jj-authors__grid">
+        <article class="jj-author">
+          <div class="jj-avatar" style="background:linear-gradient(140deg,#e8453c,#8c1f16)">桑</div>
+          <div>
+            <h3>阿桑 <em>签约创作者</em></h3>
+            <p class="jj-author__field">擅长：日常纪录 · 人物访谈</p>
+            <p class="jj-author__bio">纪录片导演，拍了九年街巷与早餐铺。坚持现场收音、不用配乐，认为好片子是等出来的而不是剪出来的。主持「邻家小妹」共创企划，带过三十多位零基础创作者完成首片。</p>
+            <div class="jj-author__nums"><span>作品 <b>86</b></span><span>粉丝 <b>12.4 万</b></span></div>
+            <button class="jj-author__more" data-jj-author="0">查看档案 →</button>
+          </div>
+        </article>
+
+        <article class="jj-author">
+          <div class="jj-avatar" style="background:linear-gradient(140deg,#3c3a41,#6d6773)">沉</div>
+          <div>
+            <h3>沉舟 <em>窄路计划</em></h3>
+            <p class="jj-author__field">擅长：匠人记录 · 剪辑方法论</p>
+            <p class="jj-author__bio">前广告剪辑师，转向纪实后专拍手艺人。习惯在一个地方待满一周，剪片前先写三千字观察笔记。相信限制是结构的来源，目前负责窄路计划的流程培训与成片复盘。</p>
+            <div class="jj-author__nums"><span>作品 <b>54</b></span><span>粉丝 <b>8.1 万</b></span></div>
+            <button class="jj-author__more" data-jj-author="1">查看档案 →</button>
+          </div>
+        </article>
+
+        <article class="jj-author">
+          <div class="jj-avatar" style="background:linear-gradient(140deg,#2f7d69,#164a3d)">南</div>
+          <div>
+            <h3>南屿 <em>教程主理人</em></h3>
+            <p class="jj-author__field">擅长：教程干货 · 拍摄清单</p>
+            <p class="jj-author__bio">独立摄影师兼讲师，做了六年线下工作坊。擅长把复杂的拍摄流程拆成一张 A4 纸能写完的清单，课程以「可执行」著称。社区里流传的拍摄模板，大多出自她手。</p>
+            <div class="jj-author__nums"><span>作品 <b>72</b></span><span>粉丝 <b>9.7 万</b></span></div>
+            <button class="jj-author__more" data-jj-author="2">查看档案 →</button>
+          </div>
+        </article>
+
+        <article class="jj-author">
+          <div class="jj-avatar" style="background:linear-gradient(140deg,#3f5c8a,#1d2f4d)">屿</div>
+          <div>
+            <h3>屿声 <em>城市观察</em></h3>
+            <p class="jj-author__field">擅长：城市探索 · 环境声采集</p>
+            <p class="jj-author__bio">声音设计师出身，专拍城市在夜里和凌晨的样子。设备极简，常只带一台机身和一副领夹麦。发起的「夜骑三十公里」已经带动七个城市出现同题投稿。</p>
+            <div class="jj-author__nums"><span>作品 <b>41</b></span><span>粉丝 <b>6.3 万</b></span></div>
+            <button class="jj-author__more" data-jj-author="3">查看档案 →</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ S6 评论（双列）+ 榜单 ============ -->
+  <section class="jj-section jj-community" id="community">
+    <div class="jj-wrap">
+      <div class="jj-sec-head">
+        <div>
+          <span class="jj-eyebrow">Community</span>
+          <h2 class="jj-h2">社区口碑 · <em>真实用户怎么说</em></h2>
+          <p class="jj-lead">来自评论区的原文摘录，未做润色。我们保留不同意见，也保留那些具体的建议。</p>
+        </div>
+        <button class="jj-btn jj-btn--ghost" data-jj-open="share">分享本页</button>
+      </div>
+
+      <div class="jj-comm__grid">
+        <div class="jj-comments">
+          <div class="jj-comment">
+            <div class="jj-comment__head"><i style="background:#e8453c">林</i><b>林间有风</b><small>2 小时前</small></div>
+            <p>《楼下那家早餐店》看到第二遍才发现，老板娘喊客人名字是带方言调的。这种细节，加旁白就毁了。感谢你们没有加。</p>
+            <div class="jj-comment__foot"><span>赞同 312</span><span>回复 18</span></div>
+          </div>
+          <div class="jj-comment">
+            <div class="jj-comment__head"><i style="background:#3c3a41">老</i><b>老周拍片</b><small>5 小时前</small></div>
+            <p>流程课里「必须放弃一个镜头」这条，我一开始不理解，试了一次之后懂了：先想清楚不拍什么，现场才不会被素材拖着走。</p>
+            <div class="jj-comment__foot"><span>赞同 268</span><span>回复 9</span></div>
+          </div>
+          <div class="jj-comment">
+            <div class="jj-comment__head"><i style="background:#2f7d69">一</i><b>一只阿柚</b><small>昨天</small></div>
+            <p>作为完全的新手，我最大的感受是这个社区不吓人。投稿被退回来的时候，附了三条具体修改建议，不是一句「不符合要求」。</p>
+            <div class="jj-comment__foot"><span>赞同 204</span><span>回复 27</span></div>
+          </div>
+          <div class="jj-comment">
+            <div class="jj-comment__head"><i style="background:#3f5c8a">夜</i><b>夜骑老刘</b><small>昨天</small></div>
+            <p>夜骑那条片子的收音很敢。很多团队会把风声修掉，你们留着，反而让我相信这是真的在骑。</p>
+            <div class="jj-comment__foot"><span>赞同 156</span><span>回复 6</span></div>
+          </div>
+          <div class="jj-comment">
+            <div class="jj-comment__head"><i style="background:#8a5a2b">山</i><b>山不转</b><small>2 天前</small></div>
+            <p>提个不同意见：专题页面的更新节奏有点慢，第三期的进度上次更新是三周前了。希望官方能固定一个更新频率，哪怕是「暂无进展」也说一声。</p>
+            <div class="jj-comment__foot"><span>赞同 89</span><span>回复 33</span></div>
+          </div>
+          <div class="jj-comment">
+            <div class="jj-comment__head"><i style="background:#7a4a8a">小</i><b>小满未满</b><small>2 天前</small></div>
+            <p>带孩子一起看了修表匠那支，他问我为什么老人要一直低着头。我说因为那是在做一件很小、但很重要的事。这支片子对我们来说不只是内容。</p>
+            <div class="jj-comment__foot"><span>赞同 421</span><span>回复 41</span></div>
+          </div>
+          <div class="jj-comment">
+            <div class="jj-comment__head"><i style="background:#a8562b">剪</i><b>剪辑小赵</b><small>3 天前</small></div>
+            <p>数据榜单如果能开放下载原始表格就好了，想拿来做行业分析。现在只能一条条抄，稍微麻烦。</p>
+            <div class="jj-comment__foot"><span>赞同 64</span><span>回复 12</span></div>
+          </div>
+          <div class="jj-comment">
+            <div class="jj-comment__head"><i style="background:#23607a">慢</i><b>慢半拍</b><small>3 天前</small></div>
+            <p>最喜欢的是这里的评论不吵架。可能因为大家都在讨论具体怎么拍，而不是谁更厉害。</p>
+            <div class="jj-comment__foot"><span>赞同 178</span><span>回复 5</span></div>
+          </div>
+        </div>
+
+        <aside class="jj-rank">
+          <h3>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;color:#b8291f" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+            本周口碑榜
+          </h3>
+          <p class="jj-rank__sub">统计周期：11 月 15 日 — 11 月 21 日 · 综合播放、收藏与评论质量</p>
+          <div class="jj-rank__row"><span class="jj-rank__no">1</span><p>楼下那家早餐店</p><div class="jj-rank__bar"><i style="width:100%"></i></div><small>9.6</small></div>
+          <div class="jj-rank__row"><span class="jj-rank__no">2</span><p>一线天·山路七小时</p><div class="jj-rank__bar"><i style="width:92%"></i></div><small>9.4</small></div>
+          <div class="jj-rank__row"><span class="jj-rank__no">3</span><p>修表匠的四十一秒</p><div class="jj-rank__bar"><i style="width:86%"></i></div><small>9.2</small></div>
+          <div class="jj-rank__row"><span class="jj-rank__no">4</span><p>夜骑三十公里</p><div class="jj-rank__bar"><i style="width:78%"></i></div><small>8.9</small></div>
+          <div class="jj-rank__row"><span class="jj-rank__no">5</span><p>窄路流程课</p><div class="jj-rank__bar"><i style="width:70%"></i></div><small>8.7</small></div>
+          <div class="jj-rank__row"><span class="jj-rank__no">6</span><p>三年复盘</p><div class="jj-rank__bar"><i style="width:63%"></i></div><small>8.5</small></div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ S7 辅助区：动态 / 合作 / FAQ ============ -->
+  <section class="jj-section" id="aux">
+    <div class="jj-wrap">
+      <div class="jj-sec-head">
+        <div>
+          <span class="jj-eyebrow">Updates &amp; Help</span>
+          <h2 class="jj-h2">企业动态 · <em>合作与帮助</em></h2>
+          <p class="jj-lead">官方发布的最新进展、长期合作的伙伴，以及投稿前最常被问到的六个问题。</p>
+        </div>
+        <a class="jj-btn jj-btn--ghost" href="#cta">投稿入口</a>
+      </div>
+
+      <div class="jj-aux__grid">
+        <div class="jj-panel" id="news">
+          <h3>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5h13v14H4z"/><path d="M17 9h3v8a2 2 0 0 1-2 2H6"/><path d="M7 8h7M7 12h7M7 16h4"/></svg>
+            企业动态
+          </h3>
+          <ul class="jj-news">
+            <li><time>2026-11-21</time><p>「一线天」窄路计划第三期公布入选名单，共 20 位创作者，成片预计 2027 年 1 月陆续上线。</p></li>
+            <li><time>2026-11-18</time><p>官方网站新增「素材授权模板」下载区，含肖像授权、场地使用与音乐授权三类文件。</p></li>
+            <li><time>2026-11-14</time><p>创作开放日改期为 11 月 29 日，地点不变，已报名者无需重复提交。</p></li>
+            <li><time>2026-11-09</time><p>社区投稿通道完成升级，单次上传上限提升至 8 GB，支持断点续传。</p></li>
+            <li><time>2026-11-02</time><p>与三家在地文化机构达成内容合作，共同推进手艺人影像档案的长期记录。</p></li>
+          </ul>
+        </div>
+
+        <div class="jj-panel">
+          <h3>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="10" r="2.4"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 14.5c2.8.4 5 2.8 5 5.5"/></svg>
+            合作品牌
+          </h3>
+          <p style="font-size:12.5px;color:#6e6b74;margin-bottom:12px">长期合作的内容与设备伙伴，共同支持创作者完成原创正版作品。</p>
+          <div class="jj-partners">
+            <div class="jj-partner">山野器材</div>
+            <div class="jj-partner">拾光书店</div>
+            <div class="jj-partner">南岸咖啡馆</div>
+            <div class="jj-partner">慢传音频</div>
+            <div class="jj-partner">木作工坊</div>
+            <div class="jj-partner">在地文化社</div>
+          </div>
+        </div>
+
+        <div class="jj-panel jj-faq">
+          <h3>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.6 2.3c-.7.4-1.1 1-1.1 1.8"/><circle cx="12" cy="17" r=".8" fill="currentColor"/></svg>
+            常见问题
+          </h3>
+          <details><summary>投稿需要什么条件？</summary><p>年满 18 周岁即可投稿，无设备门槛。需保证素材为本人原创、已获得出镜人书面授权，并同意在官方渠道标注创作者署名。</p></details>
+          <details><summary>「一线天」窄路计划的预算怎么算？</summary><p>按成片时长分档给予固定制作补贴，不报销单项设备租赁。评审更关注选题完成度与流程执行，不以画质参数为主要依据。</p></details>
+          <details><summary>为什么我的作品被退回？</summary><p>常见原因有三类：授权文件缺失、现场收音严重失真、主题与所选支线不匹配。退回时会附具体修改建议，可在 30 天内重新提交。</p></details>
+          <details><summary>可以商用吗？</summary><p>官方上线的精品内容版权归创作者与平台共有，商用需提前申请授权。素材授权模板可在官网下载区获取，个人学习与二次创作在署名前提下允许使用。</p></details>
+          <details><summary>专题更新多久一次？</summary><p>常规专题为双周更新，窄路计划在拍摄期内每周更新一次进度。如遇延期，会在企业动态中说明原因，不做静默处理。</p></details>
+          <details><summary>如何加入创作开放日？</summary><p>通过本页投稿入口提交报名信息，审核通过后收到具体时间与地点通知。开放日不收取费用，名额按报名先后与作品情况综合安排。</p></details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 投稿 CTA ============ -->
+  <section class="jj-section jj-section--tight" id="cta">
+    <div class="jj-wrap">
+      <div class="jj-cta">
+        <div>
+          <h2>你那条窄路，我们想看看</h2>
+          <p>留下邮箱，我们会把投稿规范、素材授权模板与拍摄清单发给你。也可以直接提交你的选题，编辑部会在五个工作日内回复。</p>
+          <form class="jj-cta__form" id="jjCtaForm" novalidate>
+            <label class="jj-sr-only" for="jjCtaEmail">邮箱地址</label>
+            <input id="jjCtaEmail" type="email" placeholder="你的邮箱地址" autocomplete="email">
+            <button class="jj-btn jj-btn--primary" type="submit">获取投稿资料</button>
+          </form>
+        </div>
+        <div class="jj-cta__side">
+          <div class="jj-cta__pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M4 20h16"/></svg>
+            <span><b>素材授权模板</b> 三类文件可直接下载</span>
+          </div>
+          <div class="jj-cta__pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <span><b>五个工作日</b> 内收到选题反馈</span>
+          </div>
+          <div class="jj-cta__pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 12l6 6L20 6"/></svg>
+            <span><b>零门槛报名</b> 不收取任何费用</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ S8 页脚 ============ -->
+<footer class="jj-footer">
+  <div class="jj-wrap">
+    <div class="jj-footer__grid">
+      <div class="jj-footer__brand">
+        <a class="jj-logo" href="#top" aria-label="返回顶部">
+          <span class="jj-logo__mark">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 5l12 7-12 7V5z" fill="#fff"/></svg>
+          </span>
+          <span class="jj-logo__text">
+            <strong>鸠摩智映像</strong>
+            <span>JIUMOZHI · STUDIO</span>
+          </span>
+        </a>
+        <p>鸠摩智映像官方网站 · 深耕纪实与生活影像的原创视频品牌，持续运营原创正版高清内容，为创作者与企业搭建值得信赖的内容生态。</p>
+        <div class="jj-footer__soc">
+          <button data-jj-open="share" aria-label="分享本页">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="6" cy="12" r="2.6"/><circle cx="18" cy="6" r="2.6"/><circle cx="18" cy="18" r="2.6"/><path d="M8.4 10.8l7.2-3.6M8.4 13.2l7.2 3.6"/></svg>
+          </button>
+          <button data-jj-open="report" aria-label="反馈与举报">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3l9 16H3z"/><path d="M12 9v4"/><circle cx="12" cy="16" r=".8" fill="currentColor"/></svg>
+          </button>
+          <button data-jj-open="submit" aria-label="投稿报名">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 20h16"/><path d="M12 4v11"/><path d="M8 11l4 4 4-4"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div>
+        <h4>内容支线</h4>
+        <ul>
+          <li><a href="#essay">鸠摩智 · 观察者支线</a></li>
+          <li><a href="#essay">邻家小妹 · 日常支线</a></li>
+          <li><a href="#essay">一线天 · 窄路计划</a></li>
+          <li><a href="#videos">全部正片</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>社区</h4>
+        <ul>
+          <li><a href="#authors">创作者矩阵</a></li>
+          <li><a href="#community">口碑与榜单</a></li>
+          <li><a href="#plans">专题企划</a></li>
+          <li><a href="#cta">投稿与报名</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>关于</h4>
+        <ul>
+          <li><a href="#news">企业动态</a></li>
+          <li><a href="#aux">合作品牌</a></li>
+          <li><a href="#aux">帮助中心</a></li>
+          <li><a href="#essay">品牌故事</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="jj-footer__bottom">
+      <span>© 2026 鸠摩智映像 官方网站 · 版权所有 · 持续运营中</span>
+      <span>原创内容受版权保护，未经授权禁止转载 · 备案号：影备 2026-1108 号</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Toast -->
+<div class="jj-toast" id="jjToast" role="status" aria-live="polite"></div>
+
+<!-- 通用弹窗 -->
+<div class="jj-modal" id="jjModal" role="dialog" aria-modal="true" aria-labelledby="jjModalTitle">
+  <div class="jj-modal__box">
+    <button class="jj-modal__close" id="jjModalClose" aria-label="关闭">×</button>
+    <div id="jjModalBody"></div>
+  </div>
+</div>
+
+<!-- 回到顶部 -->
+<button class="jj-top" id="jjTop" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 19V5"/><path d="M6 11l6-6 6 6"/></svg>
+</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- Toast ---------- */
+  var toastEl = document.getElementById("jjToast");
+  var toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add("is-show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove("is-show"); }, 2400);
+  }
+
+  /* ---------- 移动端导航 ---------- */
+  var burger = document.getElementById("jjBurger");
+  var mobileNav = document.getElementById("jjMobileNav");
+  burger.addEventListener("click", function(){
+    var open = mobileNav.classList.toggle("is-open");
+    burger.classList.toggle("is-active", open);
+    burger.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  mobileNav.addEventListener("click", function(e){
+    if (e.target.tagName === "A"){
+      mobileNav.classList.remove("is-open");
+      burger.classList.remove("is-active");
+      burger.setAttribute("aria-expanded","false");
+    }
+  });
+
+  /* ---------- 数字滚动 ---------- */
+  function runCount(el){
+    var target = parseInt(el.getAttribute("data-jj-count"), 10) || 0;
+    var suffix = el.getAttribute("data-jj-suffix") || "";
+    var start = 0, dur = 1100, t0 = null;
+    function step(ts){
+      if (!t0) t0 = ts;
+      var p = Math.min((ts - t0) / dur, 1);
+      var val = Math.floor(start + (target - start) * (1 - Math.pow(1 - p, 3)));
+      el.textContent = val + (suffix ? (suffix === "万" ? "." : "") : "");
+      if (suffix && suffix !== "%" && suffix !== "万") el.textContent = val + suffix;
+      if (suffix === "万") el.textContent = val + "万+";
+      if (suffix === "%") el.textContent = val + "%";
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  var counted = false;
+  var statEls = document.querySelectorAll("[data-jj-count]");
+  function maybeCount(){
+    if (counted) return;
+    var first = statEls[0];
+    if (!first) return;
+    var rect = first.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 40){
+      counted = true;
+      statEls.forEach(runCount);
+    }
+  }
+  window.addEventListener("scroll", maybeCount, {passive:true});
+  maybeCount();
+
+  /* ---------- 点赞 / 收藏 ---------- */
+  document.addEventListener("click", function(e){
+    var like = e.target.closest("[data-jj-like]");
+    if (like){
+      var on = like.classList.toggle("is-on");
+      like.setAttribute("aria-pressed", on ? "true" : "false");
+      var span = like.querySelector("span");
+      if (span){
+        var txt = span.textContent;
+        var num = parseFloat(txt);
+        if (!isNaN(num)){
+          num = on ? num + 0.1 : Math.max(0, num - 0.1);
+          span.textContent = (Math.round(num * 10) / 10) + "k";
+        }
+      }
+      toast(on ? "已点赞，感谢支持原创" : "已取消点赞");
+      return;
+    }
+    var fav = e.target.closest("[data-jj-fav]");
+    if (fav){
+      var favOn = fav.classList.toggle("is-on");
+      fav.setAttribute("aria-pressed", favOn ? "true" : "false");
+      toast(favOn ? "已收藏到我的片单" : "已取消收藏");
+    }
+  });
+
+  /* ---------- 搜索 ---------- */
+  var searchInput = document.getElementById("jjSearchInput");
+  var searchBtn = document.getElementById("jjSearchBtn");
+  var searchHint = document.getElementById("jjSearchHint");
+  var cards = Array.prototype.slice.call(document.querySelectorAll("[data-jj-search]"));
+  var suggestions = ["一线天 山路七小时","邻家小妹 早餐店","修表匠 四十一秒","窄路计划 报名","夜骑 城市探索","剪辑 流程课","创作者 阿桑"];
+
+  function clearHit(){
+    document.querySelectorAll(".jj-hit").forEach(function(node){
+      var parent = node.parentNode;
+      parent.replaceChild(document.createTextNode(node.textContent), node);
+      parent.normalize();
+    });
+  }
+  function markHit(term){
+    if (!term) return;
+    var walker = document.createTreeWalker(document.getElementById("videos"), NodeFilter.SHOW_TEXT, null);
+    var targets = [];
+    while (walker.nextNode()){
+      var n = walker.currentNode;
+      if (n.nodeValue && n.nodeValue.indexOf(term) !== -1 && n.parentNode.tagName !== "SCRIPT"){
+        targets.push(n);
+      }
+    }
+    targets.forEach(function(node){
+      var idx = node.nodeValue.indexOf(term);
+      if (idx < 0) return;
+      var before = node.nodeValue.slice(0, idx);
+      var after = node.nodeValue.slice(idx + term.length);
+      var span = document.createElement("mark");
+      span.className = "jj-hit";
+      span.textContent = term;
+      var frag = document.createDocumentFragment();
+      if (before) frag.appendChild(document.createTextNode(before));
+      frag.appendChild(span);
+      if (after) frag.appendChild(document.createTextNode(after));
+      node.parentNode.replaceChild(frag, node);
+    });
+  }
+  function doSearch(){
+    var q = (searchInput.value || "").trim();
+    clearHit();
+    if (!q){
+      toast("请输入关键词，例如「一线天」");
+      return;
+    }
+    var hits = 0;
+    cards.forEach(function(card){
+      var text = (card.getAttribute("data-jj-search") || "") + card.textContent;
+      var ok = text.indexOf(q) !== -1;
+      card.style.display = ok ? "" : "none";
+      if (ok) hits++;
+    });
+    if (hits === 0){
+      cards.forEach(function(c){ c.style.display = ""; });
+      toast("没有匹配到「" + q + "」，已恢复全部视频");
+      return;
+    }
+    markHit(q);
+    toast("找到 " + hits + " 条与「" + q + "」相关的视频");
+    document.getElementById("videos").scrollIntoView({behavior:"smooth", block:"start"});
+  }
+  searchBtn.addEventListener("click", doSearch);
+  searchInput.addEventListener("keydown", function(e){
+    if (e.key === "Enter"){ e.preventDefault(); doSearch(); }
+  });
+  searchInput.addEventListener("focus", function(){
+    var q = (searchInput.value || "").trim();
+    var list = q ? suggestions.filter(function(s){ return s.indexOf(q) !== -1; }) : suggestions;
+    searchHint.innerHTML = list.length
+      ? list.map(function(s){ return "<p data-jj-sug=\"" + s + "\">" + s + "</p>"; }).join("")
+      : "<p>暂无推荐词</p>";
+    searchHint.classList.add("is-open");
+  });
+  searchHint.addEventListener("click", function(e){
+    var p = e.target.closest("[data-jj-sug]");
+    if (p){
+      searchInput.value = p.getAttribute("data-jj-sug");
+      searchHint.classList.remove("is-open");
+      doSearch();
+    }
+  });
+  document.addEventListener("click", function(e){
+    if (!e.target.closest(".jj-search")) searchHint.classList.remove("is-open");
+  });
+
+  /* ---------- 弹窗系统 ---------- */
+  var modal = document.getElementById("jjModal");
+  var modalBody = document.getElementById("jjModalBody");
+  var modalClose = document.getElementById("jjModalClose");
+  var lastFocus = null;
+
+  function openModal(html){
+    lastFocus = document.activeElement;
+    modalBody.innerHTML = html;
+    modal.classList.add("is-open");
+    document.body.style.overflow = "hidden";
+    var firstInput = modalBody.querySelector("input,textarea,select,button");
+    if (firstInput) setTimeout(function(){ firstInput.focus(); }, 60);
+  }
+  function closeModal(){
+    modal.classList.remove("is-open");
+    document.body.style.overflow = "";
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  modalClose.addEventListener("click", closeModal);
+  modal.addEventListener("click", function(e){
+    if (e.target === modal) closeModal();
+  });
+  document.addEventListener("keydown", function(e){
+    if (e.key === "Escape" && modal.classList.contains("is-open")) closeModal();
+  });
+
+  var authorData = [
+    {name:"阿桑", field:"日常纪录 · 人物访谈", works:"86 部", fans:"12.4 万", bio:"纪录片导演，拍了九年街巷与早餐铺。坚持现场收音、不用配乐。主持「邻家小妹」共创企划，带过三十多位零基础创作者完成首片，其中七部进入官方推荐位。"},
+    {name:"沉舟", field:"匠人记录 · 剪辑方法论", works:"54 部", fans:"8.1 万", bio:"前广告剪辑师，转向纪实后专拍手艺人。习惯在一个地方待满一周，剪片前先写三千字观察笔记。负责窄路计划的流程培训与成片复盘，完片率提升的主要推动者之一。"},
+    {name:"南屿", field:"教程干货 · 拍摄清单", works:"72 部", fans:"9.7 万", bio:"独立摄影师兼讲师，做了六年线下工作坊。擅长把复杂流程拆成一张 A4 纸能写完的清单。社区里流传的拍摄模板大多出自她手，课程以可执行著称。"},
+    {name:"屿声", field:"城市探索 · 环境声采集", works:"41 部", fans:"6.3 万", bio:"声音设计师出身，专拍城市在夜里和凌晨的样子。设备极简，常只带一台机身和一副领夹麦。发起的「夜骑三十公里」已带动七个城市出现同题投稿。"}
+  ];
+
+  function submitModalHTML(){
+    return '<h3 id="jjModalTitle">投稿 / 报名</h3>'
+      + '<p class="jj-modal__sub">填写基本信息即可提交选题，编辑部将在五个工作日内回复。不收取任何费用。</p>'
+      + '<form id="jjSubmitForm" novalidate>'
+      + '<div class="jj-field"><label for="jjName">称呼</label><input id="jjName" type="text" placeholder="怎么称呼你" autocomplete="name"></div>'
+      + '<div class="jj-field"><label for="jjMail">邮箱</label><input id="jjMail" type="email" placeholder="用于接收回复" autocomplete="email"></div>'
+      + '<div class="jj-field"><label for="jjLine">想参与的支线</label><select id="jjLine"><option>鸠摩智 · 观察者支线</option><option>邻家小妹 · 日常支线</option><option>一线天 · 窄路计划</option><option>暂不确定</option></select></div>'
+      + '<div class="jj-field"><label for="jjIdea">选题一句话</label><textarea id="jjIdea" placeholder="例如：拍我楼下修鞋铺的下午三点"></textarea></div>'
+      + '<div class="jj-modal__actions"><button class="jj-btn jj-btn--primary" type="submit">提交选题</button><button class="jj-btn jj-btn--ghost" type="button" data-jj-close>取消</button></div>'
+      + '</form>';
+  }
+
+  function shareModalHTML(){
+    return '<h3 id="jjModalTitle">分享本页</h3>'
+      + '<p class="jj-modal__sub">把鸠摩智 邻家小妹 一线天的官网分享给同样在拍片的朋友。</p>'
+      + '<div class="jj-share-grid">'
+      + '<button type="button" data-jj-share="微信">微信</button>'
+      + '<button type="button" data-jj-share="微博">微博</button>'
+      + '<button type="button" data-jj-share="QQ">QQ</button>'
+      + '<button type="button" data-jj-share="复制链接">复制链接</button>'
+      + '</div>'
+      + '<div class="jj-linkbox"><input id="jjLinkText" type="text" value="鸠摩智映像 · 官方网站" readonly><button class="jj-btn jj-btn--primary" type="button" id="jjCopyBtn">复制</button></div>';
+  }
+
+  function reportModalHTML(){
+    return '<h3 id="jjModalTitle">反馈与举报</h3>'
+      + '<p class="jj-modal__sub">如果你发现内容侵权、信息错误或体验问题，请告诉我们，我们会认真处理。</p>'
+      + '<div class="jj-field"><label for="jjReportType">问题类型</label><select id="jjReportType"><option>内容版权问题</option><option>信息错误</option><option>体验与功能建议</option><option>其他</option></select></div>'
+      + '<div class="jj-field"><label for="jjReportText">具体说明</label><textarea id="jjReportText" placeholder="请描述你遇到的问题，越具体越好"></textarea></div>'
+      + '<div class="jj-field"><label for="jjReportMail">联系方式（选填）</label><input id="jjReportMail" type="email" placeholder="方便我们回访"></div>'
+      + '<div class="jj-modal__actions"><button class="jj-btn jj-btn--primary" type="button" id="jjReportSend">提交反馈</button><button class="jj-btn jj-btn--ghost" type="button" data-jj-close>取消</button></div>';
+  }
+
+  function authorModalHTML(idx){
+    var a = authorData[idx];
+    if (!a) return '<h3 id="jjModalTitle">创作者档案</h3><p>暂无数据</p>';
+    return '<div class="jj-author-modal__top">'
+      + '<div class="jj-avatar" style="background:linear-gradient(140deg,#e8453c,#8c1f16)">' + a.name.charAt(0) + '</div>'
+      + '<div><h3 id="jjModalTitle" style="margin:0">' + a.name + '</h3><p class="jj-modal__sub" style="margin:3px 0 0">' + a.field + '</p></div>'
+      + '</div>'
+      + '<p style="font-size:13.5px;color:#3c3a41;line-height:1.8">' + a.bio + '</p>'
+      + '<div class="jj-meta" style="margin-top:12px"><span>作品 <b>' + a.works + '</b></span><span>粉丝 <b>' + a.fans + '</b></span><span>签约状态 <b>官方合作</b></span></div>'
+      + '<div class="jj-modal__actions"><button class="jj-btn jj-btn--primary" type="button" data-jj-close>关注这位创作者</button><button class="jj-btn jj-btn--ghost" type="button" data-jj-close>关闭</button></div>';
+  }
+
+  document.addEventListener("click", function(e){
+    var opener = e.target.closest("[data-jj-open]");
+    if (opener){
+      var type = opener.getAttribute("data-jj-open");
+      if (type === "submit") openModal(submitModalHTML());
+      else if (type === "share") openModal(shareModalHTML());
+      else if (type === "report") openModal(reportModalHTML());
+      return;
+    }
+    var authorBtn = e.target.closest("[data-jj-author]");
+    if (authorBtn){
+      openModal(authorModalHTML(parseInt(authorBtn.getAttribute("data-jj-author"), 10)));
+      return;
+    }
+    if (e.target.closest("[data-jj-close]")){
+      closeModal();
+      return;
+    }
+    var shareBtn = e.target.closest("[data-jj-share]");
+    if (shareBtn){
+      var ch = shareBtn.getAttribute("data-jj-share");
+      if (ch === "复制链接"){
+        copyLink();
+      } else {
+        toast("已生成「" + ch + "」分享入口，请在弹窗中继续操作");
+      }
+      return;
+    }
+    if (e.target.closest("#jjCopyBtn")){
+      copyLink();
+    }
+  });
+
+  function copyLink(){
+    var text = "鸠摩智映像官方网站 · 原创影像社区";
+    if (navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){
+        toast("已复制分享信息");
+      }).catch(function(){
+        toast("复制失败，请手动选择文本");
+      });
+    } else {
+      var box = document.getElementById("jjLinkText");
+      if (box){ box.select(); }
+      toast("请手动复制已选中的文本");
+    }
+  }
+
+  /* 弹窗内的表单提交 */
+  document.addEventListener("submit", function(e){
+    if (e.target.id === "jjSubmitForm"){
+      e.preventDefault();
+      var mail = document.getElementById("jjMail").value.trim();
+      if (!mail || mail.indexOf("@") < 0){
+        toast("请填写有效的邮箱地址");
+        return;
+      }
+      closeModal();
+      toast("选题已提交，五个工作日内回复到你邮箱");
+    }
+  });
+  document.addEventListener("click", function(e){
+    if (e.target.id === "jjReportSend"){
+      var txt = document.getElementById("jjReportText").value.trim();
+      if (txt.length < 5){
+        toast("请补充更具体的说明");
+        return;
+      }
+      closeModal();
+      toast("反馈已收到，感谢你的帮助");
+    }
+  });
+
+  /* ---------- CTA 表单 ---------- */
+  var ctaForm = document.getElementById("jjCtaForm");
+  ctaForm.addEventListener("submit", function(e){
+    e.preventDefault();
+    var email = document.getElementById("jjCtaEmail").value.trim();
+    if (!email || email.indexOf("@") < 0){
+      toast("请填写有效的邮箱地址");
+      return;
+    }
+    document.getElementById("jjCtaEmail").value = "";
+    toast("投稿资料已发送，请查收邮箱");
+  });
+
+  /* ---------- 回到顶部 ---------- */
+  var topBtn = document.getElementById("jjTop");
+  window.addEventListener("scroll", function(){
+    if (window.scrollY > 560) topBtn.classList.add("is-show");
+    else topBtn.classList.remove("is-show");
+  }, {passive:true});
+  topBtn.addEventListener("click", function(){
+    window.scrollTo({top:0, behavior:"smooth"});
+  });
+
+})();
+</script>
+</body>
+              </html>
